@@ -448,6 +448,20 @@ public class ModItems {
         public static final Item RA_SPAWN_EGG = registerItem("ra_spawn_egg",
                         new SpawnEggItem(ModEntities.RA, 0xFFD700, 0xFF4500, new FabricItemSettings()));
 
+        // Minion Spawn Eggs (v0.6 F3)
+        public static final Item DRAUGR_SPAWN_EGG = registerItem("draugr_spawn_egg",
+                        new SpawnEggItem(ModEntities.DRAUGR, 0x8FA3AD, 0x28323A, new FabricItemSettings()));
+        public static final Item ONI_MENOR_SPAWN_EGG = registerItem("oni_menor_spawn_egg",
+                        new SpawnEggItem(ModEntities.ONI_MENOR, 0xC53F3F, 0xFFD75E, new FabricItemSettings()));
+        public static final Item MOMIA_SIRVIENTE_SPAWN_EGG = registerItem("momia_sirviente_spawn_egg",
+                        new SpawnEggItem(ModEntities.MOMIA_SIRVIENTE, 0xD8C9A3, 0x8A7A55, new FabricItemSettings()));
+        public static final Item GUERRERO_JAGUAR_SPAWN_EGG = registerItem("guerrero_jaguar_spawn_egg",
+                        new SpawnEggItem(ModEntities.GUERRERO_JAGUAR, 0xD8A03F, 0x4A3612, new FabricItemSettings()));
+        public static final Item HOPLITA_ESPECTRAL_SPAWN_EGG = registerItem("hoplita_espectral_spawn_egg",
+                        new SpawnEggItem(ModEntities.HOPLITA_ESPECTRAL, 0x9ADFD4, 0x2F5049, new FabricItemSettings()));
+        public static final Item SOLDADO_TERRACOTA_SPAWN_EGG = registerItem("soldado_terracota_spawn_egg",
+                        new SpawnEggItem(ModEntities.SOLDADO_TERRACOTA, 0xB5836B, 0x6E4A36, new FabricItemSettings()));
+
         // Phase 4: Chinese Boss Spawn Egg
         public static final Item SUN_WUKONG_SPAWN_EGG = registerItem("sun_wukong_spawn_egg",
                         new SpawnEggItem(ModEntities.SUN_WUKONG, 0x8B4513, 0xFFD700, new FabricItemSettings()));
@@ -623,6 +637,12 @@ public class ModItems {
                         // content.add(RIDEABLE_DRAGON_SPAWN_EGG);
                         content.add(RA_SPAWN_EGG);
                         content.add(SUN_WUKONG_SPAWN_EGG);
+                        content.add(DRAUGR_SPAWN_EGG);
+                        content.add(ONI_MENOR_SPAWN_EGG);
+                        content.add(MOMIA_SIRVIENTE_SPAWN_EGG);
+                        content.add(GUERRERO_JAGUAR_SPAWN_EGG);
+                        content.add(HOPLITA_ESPECTRAL_SPAWN_EGG);
+                        content.add(SOLDADO_TERRACOTA_SPAWN_EGG);
                 });
 
                 MythicalSwords.LOGGER.info("Registered Mythical Swords creative tab");
