@@ -1,7 +1,19 @@
 {
-  "type": "mythicalswords:mythical",
-  "variant": "aztec",
-  "biomes": "#mythicalswords:has_structure/aztec",
-  "step": "surface_structures",
-  "spawn_overrides": {}
+    "type":  "mythicalswords:mythical",
+    "variant":  "aztec",
+    "biomes":  "#mythicalswords:has_structure/aztec",
+    "step":  "surface_structures",
+    "spawn_overrides":  {
+                            "monster":  {
+                                            "spawns":  [
+                                                           {
+                                                               "maxCount":  2,
+                                                               "weight":  1,
+                                                               "minCount":  1,
+                                                               "type":  "mythicalswords:guerrero_jaguar"
+                                                           }
+                                                       ],
+                                            "bounding_box":  "full"
+                                        }
+                        }
 }

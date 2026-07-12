@@ -94,6 +94,7 @@ public class OdinEntity extends MythicalBossEntity implements GeoEntity {
                 sw.spawnParticles(ParticleTypes.ELECTRIC_SPARK,
                     this.getX(), this.getY() + 1, this.getZ(), 60, 0.8, 1.0, 0.8, 0.3);
             }
+            summonMinions(com.mythicalswords.core.ModEntities.DRAUGR, 2);
             broadcastPhaseMessage("The Allfather unleashes his wisdom upon you!", Formatting.AQUA);
 
         } else if (newPhase == 3) {

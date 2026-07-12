@@ -159,6 +159,25 @@ public abstract class MythicalBossEntity extends HostileEntity {
         }
     }
 
+    /** Summons this boss's escort minions in a ring around it (phase abilities). */
+    protected void summonMinions(EntityType<? extends net.minecraft.entity.mob.HostileEntity> type, int count) {
+        if (!(this.getWorld() instanceof ServerWorld world)) return;
+        for (int i = 0; i < count; i++) {
+            var minion = type.create(world);
+            if (minion == null) continue;
+            double angle = (Math.PI * 2 / count) * i;
+            minion.refreshPositionAndAngles(
+                    this.getX() + Math.cos(angle) * 2.5,
+                    this.getY(),
+                    this.getZ() + Math.sin(angle) * 2.5,
+                    this.getYaw(), 0);
+            minion.setTarget(this.getTarget());
+            world.spawnEntity(minion);
+            world.spawnParticles(ParticleTypes.CLOUD,
+                    minion.getX(), minion.getY() + 1, minion.getZ(), 10, 0.3, 0.5, 0.3, 0.02);
+        }
+    }
+
     /** Fires a triggerable animation on the "attack" controller if present. */
     protected void triggerAttackAnim(String name) {
         if (this instanceof software.bernie.geckolib.animatable.GeoEntity geo) {

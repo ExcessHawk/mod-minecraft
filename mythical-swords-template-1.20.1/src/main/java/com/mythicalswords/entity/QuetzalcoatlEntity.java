@@ -79,6 +79,7 @@ public class QuetzalcoatlEntity extends MythicalBossEntity implements GeoEntity 
                 }
                 sw.spawnParticles(ParticleTypes.CLOUD, getX(), getY() + 1, getZ(), 80, 2.0, 1.0, 2.0, 0.3);
             }
+            summonMinions(com.mythicalswords.core.ModEntities.GUERRERO_JAGUAR, 2);
         } else if (newPhase == 3) {
             this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(0.55);
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 0));

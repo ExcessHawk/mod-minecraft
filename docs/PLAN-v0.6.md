@@ -54,15 +54,16 @@ Base ya existe: `MythicalBossEntity` con 3 fases (100%→60%→30%).
 
 ## Fase 3 — Esbirros por mitología (grande)
 
-6 mobs menores GeckoLib, spawn en su estructura + invocados por su boss en fase 2:
-- [ ] Draugr (norse) — melee tanque, drop: frozen_soul_crystal raro
-- [ ] Oni Menor (japanese) — rápido agresivo, drop: gem_of_bishamon raro
-- [ ] Momia Sirviente (egyptian) — aplica lentitud, drop: moonstone_shard/sun_blessed_alloy raro
-- [ ] Guerrero Jaguar (mesoamerican) — salta, drop: filo_de_pluma_de_quetzal raro
-- [ ] Hoplita Espectral (greek) — escudo/formación, drop: feather_of_victory raro
-- [ ] Soldado de Terracota (chinese) — se reactiva una vez al "morir", drop: bamboo_reinforced_shaft raro
-- [ ] Spawn: dentro/alrededor de las 9 estructuras existentes (no spawn global)
-- [ ] Loop de economía: esbirros = fuente renovable de materiales rúnicos (los bosses no respawnean)
+6 mobs menores GeckoLib (✅ 2026-07-12), spawn en su estructura + invocados por su boss en fase 2. Arquitectura: base `MythicalMinionEntity` + geo/anims COMPARTIDOS (`minion.geo.json`, layout skin vanilla 64x32) + textura por esbirro (`scripts/gen-minions.ps1`); `MinionModel`/`MinionRenderer` genéricos.
+- [x] Draugr (norse) — tanque lento (40❤, armor 8); drop frozen_soul_crystal 30% + huesos; invocado por Odin; spawn en valhalla
+- [x] Oni Menor (japanese) — rápido frágil (24❤, spd .38); gem_of_bishamon 25%; invocado por Oni Oscuro; spawn en oni
+- [x] Momia Sirviente (egyptian) — golpe aplica Slowness II; moonstone_shard 25%; invocada por Anubis; spawn en desert
+- [x] Guerrero Jaguar (mesoamerican) — salta sobre presas a 3-6 bloques; filo_de_pluma 25%; invocado por Quetzalcóatl; spawn en aztec
+- [x] Hoplita Espectral (greek) — 30% Resistencia II al recibir golpe (muro de escudos); feather_of_victory 25%; invocado por Atenea; spawn en greek
+- [x] Soldado de Terracota (chinese) — la primera "muerte" se rearma al 50% vida (NBT persistente); bamboo_shaft 25%; spawn en bamboo (Wukong ya tiene clones propios)
+- [x] Spawn via `spawn_overrides` en 6 estructuras (no spawn global); helper `summonMinions()` en la base de bosses
+- [x] Loop de economía cerrado: esbirros = fuente renovable de materiales rúnicos
+- NOTA: datagen se pospuso (los JSONs de F3 son manuales, consistentes con el resto) — arranca en F4 con advancements
 
 ## Fase 4 — Progresión (mediana)
 

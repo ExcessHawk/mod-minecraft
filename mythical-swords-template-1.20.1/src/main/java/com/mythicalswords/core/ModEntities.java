@@ -13,6 +13,12 @@ import com.mythicalswords.entity.LegendaryBlacksmithEntity;
 import com.mythicalswords.entity.AnubisEntity;
 import com.mythicalswords.entity.RaEntity;
 import com.mythicalswords.entity.SunWukongEntity;
+import com.mythicalswords.entity.DraugrEntity;
+import com.mythicalswords.entity.OniMenorEntity;
+import com.mythicalswords.entity.MomiaSirvienteEntity;
+import com.mythicalswords.entity.GuerreroJaguarEntity;
+import com.mythicalswords.entity.HoplitaEspectralEntity;
+import com.mythicalswords.entity.SoldadoTerracotaEntity;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
@@ -132,6 +138,23 @@ public class ModEntities {
                                         .dimensions(EntityDimensions.fixed(0.6f, 1.95f))
                                         .build());
 
+        // ===== Mythology minions (v0.6 F3) =====
+        public static final EntityType<DraugrEntity> DRAUGR = registerMinion("draugr", DraugrEntity::new);
+        public static final EntityType<OniMenorEntity> ONI_MENOR = registerMinion("oni_menor", OniMenorEntity::new);
+        public static final EntityType<MomiaSirvienteEntity> MOMIA_SIRVIENTE = registerMinion("momia_sirviente", MomiaSirvienteEntity::new);
+        public static final EntityType<GuerreroJaguarEntity> GUERRERO_JAGUAR = registerMinion("guerrero_jaguar", GuerreroJaguarEntity::new);
+        public static final EntityType<HoplitaEspectralEntity> HOPLITA_ESPECTRAL = registerMinion("hoplita_espectral", HoplitaEspectralEntity::new);
+        public static final EntityType<SoldadoTerracotaEntity> SOLDADO_TERRACOTA = registerMinion("soldado_terracota", SoldadoTerracotaEntity::new);
+
+        private static <T extends net.minecraft.entity.mob.HostileEntity> EntityType<T> registerMinion(
+                        String name, net.minecraft.entity.EntityType.EntityFactory<T> factory) {
+                return Registry.register(Registries.ENTITY_TYPE,
+                                new Identifier(MythicalSwords.MOD_ID, name),
+                                FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, factory)
+                                                .dimensions(EntityDimensions.fixed(0.6f, 1.9f))
+                                                .build());
+        }
+
         /**
          * Register entity attributes
          */
@@ -157,5 +180,13 @@ public class ModEntities {
                 FabricDefaultAttributeRegistry.register(ANUBIS, AnubisEntity.createAnubisAttributes());
                 FabricDefaultAttributeRegistry.register(RA, RaEntity.createRaAttributes());
                 FabricDefaultAttributeRegistry.register(SUN_WUKONG, SunWukongEntity.createSunWukongAttributes());
+
+                // Mythology minions
+                FabricDefaultAttributeRegistry.register(DRAUGR, DraugrEntity.createDraugrAttributes());
+                FabricDefaultAttributeRegistry.register(ONI_MENOR, OniMenorEntity.createOniMenorAttributes());
+                FabricDefaultAttributeRegistry.register(MOMIA_SIRVIENTE, MomiaSirvienteEntity.createMomiaAttributes());
+                FabricDefaultAttributeRegistry.register(GUERRERO_JAGUAR, GuerreroJaguarEntity.createGuerreroJaguarAttributes());
+                FabricDefaultAttributeRegistry.register(HOPLITA_ESPECTRAL, HoplitaEspectralEntity.createHoplitaAttributes());
+                FabricDefaultAttributeRegistry.register(SOLDADO_TERRACOTA, SoldadoTerracotaEntity.createSoldadoTerracotaAttributes());
         }
 }

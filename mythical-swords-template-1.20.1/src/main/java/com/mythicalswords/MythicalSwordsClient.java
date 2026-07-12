@@ -93,6 +93,12 @@ public class MythicalSwordsClient implements ClientModInitializer {
                 EntityRendererRegistry.register(ModEntities.QUETZALCOATL, QuetzalcoatlRenderer::new);
 
                 EntityRendererRegistry.register(ModEntities.LEGENDARY_BLACKSMITH, LegendaryBlacksmithRenderer::new);
+                EntityRendererRegistry.register(ModEntities.DRAUGR, com.mythicalswords.client.renderer.MinionRenderer::new);
+                EntityRendererRegistry.register(ModEntities.ONI_MENOR, com.mythicalswords.client.renderer.MinionRenderer::new);
+                EntityRendererRegistry.register(ModEntities.MOMIA_SIRVIENTE, com.mythicalswords.client.renderer.MinionRenderer::new);
+                EntityRendererRegistry.register(ModEntities.GUERRERO_JAGUAR, com.mythicalswords.client.renderer.MinionRenderer::new);
+                EntityRendererRegistry.register(ModEntities.HOPLITA_ESPECTRAL, com.mythicalswords.client.renderer.MinionRenderer::new);
+                EntityRendererRegistry.register(ModEntities.SOLDADO_TERRACOTA, com.mythicalswords.client.renderer.MinionRenderer::new);
 
                 // Register Entity Model Layers
                 // Rey Arturo now uses a GeckoLib model (no vanilla model layer)

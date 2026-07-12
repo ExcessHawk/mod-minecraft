@@ -1,7 +1,19 @@
 {
-  "type": "mythicalswords:mythical",
-  "variant": "desert",
-  "biomes": "#mythicalswords:has_structure/desert",
-  "step": "surface_structures",
-  "spawn_overrides": {}
+    "type":  "mythicalswords:mythical",
+    "variant":  "desert",
+    "biomes":  "#mythicalswords:has_structure/desert",
+    "step":  "surface_structures",
+    "spawn_overrides":  {
+                            "monster":  {
+                                            "spawns":  [
+                                                           {
+                                                               "maxCount":  2,
+                                                               "weight":  1,
+                                                               "minCount":  1,
+                                                               "type":  "mythicalswords:momia_sirviente"
+                                                           }
+                                                       ],
+                                            "bounding_box":  "full"
+                                        }
+                        }
 }

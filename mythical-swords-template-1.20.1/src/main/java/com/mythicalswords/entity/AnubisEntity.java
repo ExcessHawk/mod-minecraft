@@ -177,6 +177,7 @@ public class AnubisEntity extends MythicalBossEntity implements GeoEntity {
                 sw.spawnParticles(net.minecraft.particle.ParticleTypes.SOUL,
                         getX(), getY() + 1, getZ(), 60, 1.2, 1.0, 1.2, 0.05);
             }
+            summonMinions(com.mythicalswords.core.ModEntities.MOMIA_SIRVIENTE, 2);
         } else if (newPhase == 3) {
             this.getAttributeInstance(net.minecraft.entity.attribute.EntityAttributes.GENERIC_MOVEMENT_SPEED)
                     .setBaseValue(0.40);

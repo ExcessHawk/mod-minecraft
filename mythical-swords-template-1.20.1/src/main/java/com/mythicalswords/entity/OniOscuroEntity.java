@@ -79,6 +79,7 @@ public class OniOscuroEntity extends MythicalBossEntity implements GeoEntity {
                 }
                 sw.spawnParticles(ParticleTypes.LARGE_SMOKE, getX(), getY() + 1, getZ(), 60, 1.2, 1.0, 1.2, 0.05);
             }
+            summonMinions(com.mythicalswords.core.ModEntities.ONI_MENOR, 2);
         } else if (newPhase == 3) {
             this.getAttributeInstance(EntityAttributes.GENERIC_ATTACK_DAMAGE).setBaseValue(20.0);
             this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(0.40);

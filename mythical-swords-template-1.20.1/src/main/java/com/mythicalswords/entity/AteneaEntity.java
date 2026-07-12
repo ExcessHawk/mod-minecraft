@@ -83,6 +83,7 @@ public class AteneaEntity extends MythicalBossEntity implements GeoEntity {
                 }
                 sw.spawnParticles(ParticleTypes.ENCHANT, getX(), getY() + 2, getZ(), 80, 1.0, 1.0, 1.0, 0.5);
             }
+            summonMinions(com.mythicalswords.core.ModEntities.HOPLITA_ESPECTRAL, 2);
         } else if (newPhase == 3) {
             this.heal(40.0f);
             this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 1));
