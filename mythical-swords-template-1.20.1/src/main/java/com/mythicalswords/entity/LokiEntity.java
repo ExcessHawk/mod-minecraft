@@ -3,7 +3,14 @@ package com.mythicalswords.entity;
 import com.mythicalswords.core.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundCategory;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.BossBar;
@@ -59,6 +66,49 @@ public class LokiEntity extends MythicalBossEntity implements GeoEntity {
 
         this.targetSelector.add(1, new RevengeGoal(this));
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+    }
+
+    private int trickCooldown = 100;
+
+    @Override
+    protected void onPhaseTransition(int newPhase) {
+        if (this.getWorld().isClient) return;
+        if (newPhase == 2) {
+            // Vanishing act
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 100, 0));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 1));
+            if (this.getWorld() instanceof ServerWorld sw) {
+                sw.spawnParticles(ParticleTypes.LARGE_SMOKE, getX(), getY() + 1, getZ(), 50, 0.8, 1.0, 0.8, 0.05);
+            }
+        } else if (newPhase == 3) {
+            this.getAttributeInstance(EntityAttributes.GENERIC_MOVEMENT_SPEED).setBaseValue(0.48);
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 0));
+        }
+    }
+
+    @Override
+    public void mobTick() {
+        super.mobTick();
+        if (this.getWorld().isClient) return;
+        if (trickCooldown > 0) { trickCooldown--; return; }
+
+        LivingEntity target = this.getTarget();
+        if (currentPhase < 2 || target == null) {
+            trickCooldown = 100;
+            return;
+        }
+        // Trickery: blink behind the target and poison them
+        trickCooldown = currentPhase == 3 ? 90 : 140;
+        if (this.getWorld() instanceof ServerWorld sw) {
+            sw.spawnParticles(ParticleTypes.PORTAL, getX(), getY() + 1, getZ(), 30, 0.5, 1.0, 0.5, 0.5);
+            var behind = target.getPos().subtract(
+                    target.getRotationVector().multiply(2.0, 0.0, 2.0));
+            this.teleport(behind.x, target.getY(), behind.z);
+            sw.spawnParticles(ParticleTypes.PORTAL, getX(), getY() + 1, getZ(), 30, 0.5, 1.0, 0.5, 0.5);
+            this.getWorld().playSound(null, getX(), getY(), getZ(),
+                    SoundEvents.ENTITY_ENDERMAN_TELEPORT, SoundCategory.HOSTILE, 1.0f, 1.2f);
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 80, 1), this);
+        }
     }
 
     @Override

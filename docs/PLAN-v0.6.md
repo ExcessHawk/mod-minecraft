@@ -44,7 +44,12 @@ Checklist runClient:
 Base ya existe: `MythicalBossEntity` con 3 fases (100%→60%→30%).
 - [x] Animaciones de ataque GeckoLib (2026-07-12): `attack_melee` + `attack_special` inyectadas en los 12 animation.json vía `scripts/gen-attack-anims.ps1` — 3 rigs: humanoide (swing de brazo / doble slam), Anubis sin brazos (embestida/mordida), Quetzalcóatl serpiente (latigazo/espiral). Controller "attack" triggerable en los 12 + melee dispara anim vía `tryAttack` override
 - [x] Ataque pesado telegrafiado (base, todos los bosses lo heredan): anillo de partículas FLAME + rugido 1s antes (esquivable), luego slam AoE radio 5 (daño ×1.5, knockback); cooldown 8s, en fase 3 se acelera (telegraph 0.7s, cooldown 5s); el boss se detiene durante el wind-up. Overrideable por boss (`executeHeavyAttack`)
-- [~] Habilidad por fase: los bosses YA tienen `onPhaseTransition` propios (Odin rayos, etc.) — auditar los 11 y rellenar los flojos queda pendiente
+- [x] Habilidad por fase — auditoría completada (2026-07-12) y huecos rellenados:
+  - HALLAZGO: Susanoo, Izanagi, Oni Oscuro y Quetzalcóatl extendían `HostileEntity` directo — sin bossbar, sin fases, sin goals (¡no perseguían ni atacaban!). Migrados a `MythicalBossEntity` con goals + arma visual (drop chance 0, el loot table da la limpia)
+  - Susanoo: tormenta (rayos a todos los jugadores ≤20 bloques) | Izanagi: purificación (+80 vida) + Juicio Divino (columna de luz, daño+glowing) | Oni Oscuro: oscuridad (Darkness+Wither área) + Pulso Oscuro | Quetzalcóatl: vendaval (avienta jugadores + levitación) + embestida serpiente (dash volador)
+  - Atenea: Estrategia (resistencia+debilidad área) + Lanza de Luz (daño a distancia con línea de partículas) | Loki: desvanecimiento (invisibilidad) + Truco (teleport a tu espalda + veneno) | Herrero: forja rugiente (inmune fuego, prende cercanos) + chispas fundidas
+  - Anubis y Ra: transiciones de fase agregadas (resistencia/soul burst; llamarada solar + sol moribundo)
+  - Ya COMPLETOS de antes: Odin, Rey Arturo, Sun Wukong
 - [ ] Sonidos de boss por fase (hoy alias vanilla) — pospuesto a v0.7 Arsenal (sonido completo)
 
 ## Fase 3 — Esbirros por mitología (grande)

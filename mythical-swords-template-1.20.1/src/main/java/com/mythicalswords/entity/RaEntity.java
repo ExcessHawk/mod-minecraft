@@ -224,6 +224,29 @@ public class RaEntity extends MythicalBossEntity implements GeoEntity {
     }
 
     @Override
+    protected void onPhaseTransition(int newPhase) {
+        if (this.getWorld().isClient) return;
+        if (newPhase == 2) {
+            // Solar flare: everything near the sun god catches fire
+            if (this.getWorld() instanceof net.minecraft.server.world.ServerWorld sw) {
+                for (PlayerEntity p : sw.getPlayers()) {
+                    if (p.squaredDistanceTo(this) <= 144) { // 12 blocks
+                        p.setOnFireFor(5);
+                    }
+                }
+                sw.spawnParticles(net.minecraft.particle.ParticleTypes.FLAME,
+                        getX(), getY() + 1.5, getZ(), 100, 1.5, 1.2, 1.5, 0.15);
+            }
+        } else if (newPhase == 3) {
+            // The dying sun burns brightest
+            this.getAttributeInstance(net.minecraft.entity.attribute.EntityAttributes.GENERIC_ATTACK_DAMAGE)
+                    .setBaseValue(24.0);
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 0));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, Integer.MAX_VALUE, 0));
+        }
+    }
+
+    @Override
     public int getXpToDrop() {
         return 2500; // Highest XP for Phase 4 Egyptian boss
     }

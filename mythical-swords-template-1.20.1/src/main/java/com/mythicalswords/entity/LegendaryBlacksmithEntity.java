@@ -63,6 +63,56 @@ public class LegendaryBlacksmithEntity extends MythicalBossEntity implements Geo
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
 
+    private int sparksCooldown = 100;
+
+    @Override
+    protected void onPhaseTransition(int newPhase) {
+        if (this.getWorld().isClient) return;
+        if (newPhase == 2) {
+            // The forge roars: he shrugs off fire and heat radiates from him
+            this.addStatusEffect(new net.minecraft.entity.effect.StatusEffectInstance(
+                    net.minecraft.entity.effect.StatusEffects.FIRE_RESISTANCE, Integer.MAX_VALUE, 0));
+            if (this.getWorld() instanceof net.minecraft.server.world.ServerWorld sw) {
+                for (PlayerEntity p : sw.getPlayers()) {
+                    if (p.squaredDistanceTo(this) <= 25) { // 5 blocks
+                        p.setOnFireFor(3);
+                    }
+                }
+                sw.spawnParticles(net.minecraft.particle.ParticleTypes.LAVA,
+                        getX(), getY() + 1, getZ(), 30, 0.8, 0.8, 0.8, 0.0);
+            }
+        } else if (newPhase == 3) {
+            this.addStatusEffect(new net.minecraft.entity.effect.StatusEffectInstance(
+                    net.minecraft.entity.effect.StatusEffects.STRENGTH, Integer.MAX_VALUE, 0));
+            this.addStatusEffect(new net.minecraft.entity.effect.StatusEffectInstance(
+                    net.minecraft.entity.effect.StatusEffects.RESISTANCE, Integer.MAX_VALUE, 0));
+        }
+    }
+
+    @Override
+    public void mobTick() {
+        super.mobTick();
+        if (this.getWorld().isClient) return;
+        if (sparksCooldown > 0) { sparksCooldown--; return; }
+
+        if (currentPhase < 2 || this.getTarget() == null) {
+            sparksCooldown = 100;
+            return;
+        }
+        // Molten sparks: hammer scatters embers that ignite nearby foes
+        sparksCooldown = currentPhase == 3 ? 110 : 160;
+        if (this.getWorld() instanceof net.minecraft.server.world.ServerWorld sw) {
+            sw.spawnParticles(net.minecraft.particle.ParticleTypes.LAVA,
+                    getX(), getY() + 1, getZ(), 20, 1.5, 0.5, 1.5, 0.0);
+            for (PlayerEntity p : sw.getPlayers()) {
+                if (p.isAlive() && !p.isCreative() && !p.isSpectator()
+                        && p.squaredDistanceTo(this) <= 36) { // 6 blocks
+                    p.setOnFireFor(4);
+                }
+            }
+        }
+    }
+
     @Override
     public boolean isPushedByFluids() {
         return false; // Legendary Blacksmith is sturdy

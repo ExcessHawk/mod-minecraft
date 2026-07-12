@@ -168,6 +168,23 @@ public class AnubisEntity extends MythicalBossEntity implements GeoEntity {
     }
 
     @Override
+    protected void onPhaseTransition(int newPhase) {
+        if (this.getWorld().isClient) return;
+        if (newPhase == 2) {
+            // The scales tip: the judge of the dead hardens
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 0));
+            if (this.getWorld() instanceof net.minecraft.server.world.ServerWorld sw) {
+                sw.spawnParticles(net.minecraft.particle.ParticleTypes.SOUL,
+                        getX(), getY() + 1, getZ(), 60, 1.2, 1.0, 1.2, 0.05);
+            }
+        } else if (newPhase == 3) {
+            this.getAttributeInstance(net.minecraft.entity.attribute.EntityAttributes.GENERIC_MOVEMENT_SPEED)
+                    .setBaseValue(0.40);
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 0));
+        }
+    }
+
+    @Override
     public int getXpToDrop() {
         return 2000; // Massive XP for Phase 4 boss
     }

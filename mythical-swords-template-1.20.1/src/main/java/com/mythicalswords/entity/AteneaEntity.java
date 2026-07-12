@@ -3,7 +3,12 @@ package com.mythicalswords.entity;
 import com.mythicalswords.core.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.boss.BossBar;
@@ -59,6 +64,56 @@ public class AteneaEntity extends MythicalBossEntity implements GeoEntity {
 
         this.targetSelector.add(1, new RevengeGoal(this));
         this.targetSelector.add(2, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+    }
+
+    private int spearCooldown = 100;
+
+    @Override
+    protected void onPhaseTransition(int newPhase) {
+        if (this.getWorld().isClient) return;
+        if (newPhase == 2) {
+            // Strategy of war: shield herself, sap the mortals' strength
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 400, 0));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 400, 0));
+            if (this.getWorld() instanceof ServerWorld sw) {
+                for (var p : sw.getPlayers()) {
+                    if (p.squaredDistanceTo(this) <= 256) { // 16 blocks
+                        p.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 120, 0));
+                    }
+                }
+                sw.spawnParticles(ParticleTypes.ENCHANT, getX(), getY() + 2, getZ(), 80, 1.0, 1.0, 1.0, 0.5);
+            }
+        } else if (newPhase == 3) {
+            this.heal(40.0f);
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, Integer.MAX_VALUE, 1));
+        }
+    }
+
+    @Override
+    public void mobTick() {
+        super.mobTick();
+        if (this.getWorld().isClient) return;
+        if (spearCooldown > 0) { spearCooldown--; return; }
+
+        LivingEntity target = this.getTarget();
+        if (currentPhase < 2 || target == null) {
+            spearCooldown = 100;
+            return;
+        }
+        // Spear of Light: marks and pierces the target from afar
+        spearCooldown = currentPhase == 3 ? 80 : 120;
+        if (this.getWorld() instanceof ServerWorld sw) {
+            target.damage(this.getDamageSources().magic(), 7.0f);
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 80, 0), this);
+            // Particle line from Athena to the target
+            var from = this.getPos().add(0, 1.5, 0);
+            var to = target.getPos().add(0, 1.0, 0);
+            var step = to.subtract(from).multiply(1.0 / 10);
+            for (int i = 0; i <= 10; i++) {
+                var p = from.add(step.multiply(i));
+                sw.spawnParticles(ParticleTypes.END_ROD, p.x, p.y, p.z, 1, 0.02, 0.02, 0.02, 0.0);
+            }
+        }
     }
 
     @Override
