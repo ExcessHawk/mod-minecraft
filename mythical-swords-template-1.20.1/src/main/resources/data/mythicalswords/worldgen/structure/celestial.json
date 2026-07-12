@@ -1,0 +1,7 @@
+{
+  "type": "mythicalswords:mythical",
+  "variant": "celestial",
+  "biomes": "#mythicalswords:has_structure/celestial",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

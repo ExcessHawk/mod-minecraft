@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C C",
+    "CCC",
+    "CCC"
+  ],
+  "key": {
+    "C": {"item": "mythicalswords:celestial_ingot"}
+  },
+  "result": {
+    "item": "mythicalswords:celestial_chestplate",
+    "count": 1
+  }
+}

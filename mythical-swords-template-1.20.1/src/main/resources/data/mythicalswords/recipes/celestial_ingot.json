@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FGB",
+    "VDS",
+    "MQO"
+  ],
+  "key": {
+    "F": {"item": "mythicalswords:frozen_soul_crystal"},
+    "G": {"item": "mythicalswords:gem_of_bishamon"},
+    "B": {"item": "mythicalswords:bamboo_reinforced_shaft"},
+    "V": {"item": "mythicalswords:feather_of_victory"},
+    "D": {"item": "mythicalswords:shard_of_divinity"},
+    "S": {"item": "mythicalswords:sun_blessed_alloy"},
+    "M": {"item": "mythicalswords:mythril_ingot"},
+    "Q": {"item": "mythicalswords:filo_de_pluma_de_quetzal"},
+    "O": {"item": "mythicalswords:obsidiana_ritual_shard"}
+  },
+  "result": {
+    "item": "mythicalswords:celestial_ingot",
+    "count": 1
+  }
+}

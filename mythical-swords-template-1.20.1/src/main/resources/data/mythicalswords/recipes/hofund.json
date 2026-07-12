@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " N ",
+    "NIG",
+    " R "
+  ],
+  "key": {
+    "N": {
+      "item": "mythicalswords:northsteel_ingot"
+    },
+    "I": {
+      "item": "mythicalswords:sacred_iron_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "mythicalswords:rainbow_bridge_fragment"
+    }
+  },
+  "result": {
+    "item": "mythicalswords:hofund",
+    "count": 1
+  }
+}

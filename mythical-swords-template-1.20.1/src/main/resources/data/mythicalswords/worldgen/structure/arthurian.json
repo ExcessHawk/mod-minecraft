@@ -1,0 +1,7 @@
+{
+  "type": "mythicalswords:mythical",
+  "variant": "arthurian",
+  "biomes": "#mythicalswords:has_structure/arthurian",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

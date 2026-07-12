@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "obsidiana_ritual_shard",
+  "ingredient": {
+    "item": "mythicalswords:raw_obsidiana_ritual"
+  },
+  "result": "mythicalswords:obsidiana_ritual_shard"
+}

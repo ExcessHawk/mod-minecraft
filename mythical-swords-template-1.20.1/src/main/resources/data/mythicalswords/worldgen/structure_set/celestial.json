@@ -1,0 +1,11 @@
+{
+  "structures": [
+    { "structure": "mythicalswords:celestial", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 770009,
+    "spacing": 48,
+    "separation": 20
+  }
+}

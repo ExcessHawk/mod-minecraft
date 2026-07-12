@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "FFF",
+    "FCF",
+    "FFF"
+  ],
+  "key": {
+    "F": { "item": "mythicalswords:frozen_soul_crystal" },
+    "C": { "item": "minecraft:compass" }
+  },
+  "result": {
+    "item": "mythicalswords:trickster_compass",
+    "count": 1
+  }
+}

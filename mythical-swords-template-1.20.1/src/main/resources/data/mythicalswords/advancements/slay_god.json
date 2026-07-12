@@ -1,0 +1,22 @@
+{
+  "parent": "mythicalswords:legendary_weapon",
+  "display": {
+    "icon": { "item": "mythicalswords:muramasa" },
+    "title": "Slayer of Gods",
+    "description": "Defeat a mythical boss",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "kill_boss": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "#mythicalswords:bosses" } }
+        ]
+      }
+    }
+  },
+  "requirements": [ [ "kill_boss" ] ]
+}

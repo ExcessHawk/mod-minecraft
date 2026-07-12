@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mythicalswords:item/sacred_water_of_amaterasu"
+  }
+}

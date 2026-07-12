@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["DDD", "DCD", "DDD"],
+  "key": {
+    "D": {"item": "mythicalswords:sun_blessed_alloy"},
+    "C": {"item": "minecraft:compass"}
+  },
+  "result": {"item": "mythicalswords:desert_compass", "count": 1}
+}

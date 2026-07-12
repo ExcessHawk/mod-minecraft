@@ -1,0 +1,7 @@
+{
+  "type": "mythicalswords:mythical",
+  "variant": "greek",
+  "biomes": "#mythicalswords:has_structure/greek",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

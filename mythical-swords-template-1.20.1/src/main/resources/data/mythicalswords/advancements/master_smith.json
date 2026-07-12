@@ -1,0 +1,19 @@
+{
+  "parent": "mythicalswords:root",
+  "display": {
+    "icon": { "item": "mythicalswords:jade_imperial_ingot" },
+    "title": "Master Smith",
+    "description": "Collect all five mythical ingots",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "mythril":      { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ { "items": [ "mythicalswords:mythril_ingot" ] } ] } },
+    "northsteel":   { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ { "items": [ "mythicalswords:northsteel_ingot" ] } ] } },
+    "sacred_iron":  { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ { "items": [ "mythicalswords:sacred_iron_ingot" ] } ] } },
+    "tamahagane":   { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ { "items": [ "mythicalswords:tamahagane_ingot" ] } ] } },
+    "jade":         { "trigger": "minecraft:inventory_changed", "conditions": { "items": [ { "items": [ "mythicalswords:jade_imperial_ingot" ] } ] } }
+  },
+  "requirements": [ [ "mythril" ], [ "northsteel" ], [ "sacred_iron" ], [ "tamahagane" ], [ "jade" ] ]
+}

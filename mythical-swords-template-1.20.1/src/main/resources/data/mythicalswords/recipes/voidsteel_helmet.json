@@ -1,0 +1,1 @@
+{ "type": "minecraft:crafting_shaped", "pattern": ["III","I I"], "key": {"I":{"item":"mythicalswords:voidsteel_ingot"}}, "result": {"item":"mythicalswords:voidsteel_helmet","count":1} }

@@ -1,0 +1,11 @@
+{
+  "structures": [
+    { "structure": "mythicalswords:aztec", "weight": 1 }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 770007,
+    "spacing": 48,
+    "separation": 20
+  }
+}

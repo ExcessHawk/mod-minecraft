@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mythicalswords:item/filo_de_pluma_de_quetzal"
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{"item": "minecraft:ender_pearl"},
+		{"item": "mythicalswords:obsidiana_ritual_shard"},
+		{"item": "minecraft:obsidian"}
+	],
+	"result": {"item": "mythicalswords:void_pearl", "count": 1}
+}

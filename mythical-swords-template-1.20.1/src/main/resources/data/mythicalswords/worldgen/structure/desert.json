@@ -1,0 +1,7 @@
+{
+  "type": "mythicalswords:mythical",
+  "variant": "desert",
+  "biomes": "#mythicalswords:has_structure/desert",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

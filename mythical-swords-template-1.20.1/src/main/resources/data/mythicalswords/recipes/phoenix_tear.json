@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" B ",
+		"BCB",
+		" B "
+	],
+	"key": {
+		"B": {"item": "minecraft:blaze_powder"},
+		"C": {"item": "mythicalswords:agnis_flame_core"}
+	},
+	"result": {"item": "mythicalswords:phoenix_tear", "count": 1}
+}

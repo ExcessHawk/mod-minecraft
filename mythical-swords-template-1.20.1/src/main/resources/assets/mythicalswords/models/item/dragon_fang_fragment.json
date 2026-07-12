@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mythicalswords:item/dragon_fang_fragment"
+  }
+}

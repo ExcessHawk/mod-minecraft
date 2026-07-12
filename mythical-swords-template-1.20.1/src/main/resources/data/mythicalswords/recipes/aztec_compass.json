@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["DDD", "DCD", "DDD"],
+  "key": {
+    "D": {"item": "mythicalswords:obsidiana_ritual_shard"},
+    "C": {"item": "minecraft:compass"}
+  },
+  "result": {"item": "mythicalswords:aztec_compass", "count": 1}
+}

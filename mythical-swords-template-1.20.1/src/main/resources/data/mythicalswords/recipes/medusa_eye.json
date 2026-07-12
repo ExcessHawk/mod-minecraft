@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"SSS",
+		"SES",
+		"SSS"
+	],
+	"key": {
+		"S": {"item": "mythicalswords:obsidiana_ritual_shard"},
+		"E": {"item": "minecraft:ender_eye"}
+	},
+	"result": {"item": "mythicalswords:medusa_eye", "count": 1}
+}

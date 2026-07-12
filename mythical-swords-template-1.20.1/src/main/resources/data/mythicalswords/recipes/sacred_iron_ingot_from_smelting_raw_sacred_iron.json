@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "sacred_iron",
+  "ingredient": {
+    "item": "mythicalswords:raw_sacred_iron"
+  },
+  "result": "mythicalswords:sacred_iron_ingot"
+}

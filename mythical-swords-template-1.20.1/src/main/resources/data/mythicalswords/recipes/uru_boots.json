@@ -1,0 +1,1 @@
+{ "type": "minecraft:crafting_shaped", "pattern": ["I I","I I"], "key": {"I":{"item":"mythicalswords:uru_ingot"}}, "result": {"item":"mythicalswords:uru_boots","count":1} }

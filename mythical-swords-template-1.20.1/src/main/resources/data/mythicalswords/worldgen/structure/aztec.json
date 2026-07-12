@@ -1,0 +1,7 @@
+{
+  "type": "mythicalswords:mythical",
+  "variant": "aztec",
+  "biomes": "#mythicalswords:has_structure/aztec",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

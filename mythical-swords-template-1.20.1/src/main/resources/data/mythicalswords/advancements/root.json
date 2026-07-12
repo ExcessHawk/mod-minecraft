@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": { "item": "mythicalswords:excalibur" },
+    "title": "Mythical Swords",
+    "description": "Begin your legend — obtain a mythical ingot",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "get_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": [
+            "mythicalswords:mythril_ingot",
+            "mythicalswords:northsteel_ingot",
+            "mythicalswords:sacred_iron_ingot",
+            "mythicalswords:tamahagane_ingot",
+            "mythicalswords:jade_imperial_ingot"
+          ] }
+        ]
+      }
+    }
+  },
+  "requirements": [ [ "get_ingot" ] ]
+}

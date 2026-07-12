@@ -1,0 +1,41 @@
+{
+  "parent": "mythicalswords:root",
+  "display": {
+    "icon": { "item": "mythicalswords:gungnir" },
+    "title": "Wielder of Legends",
+    "description": "Obtain a legendary mythical weapon",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "get_weapon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": [
+            "mythicalswords:excalibur",
+            "mythicalswords:gram",
+            "mythicalswords:skofnung",
+            "mythicalswords:hofund",
+            "mythicalswords:gungnir",
+            "mythicalswords:harpe",
+            "mythicalswords:xiphos_sagrado",
+            "mythicalswords:nike_blade",
+            "mythicalswords:aegis_edge",
+            "mythicalswords:kusanagi_no_tsurugi",
+            "mythicalswords:muramasa",
+            "mythicalswords:totsuka_no_tsurugi",
+            "mythicalswords:laevateinn",
+            "mythicalswords:xiuhcoatl",
+            "mythicalswords:khopesh",
+            "mythicalswords:was_scepter",
+            "mythicalswords:ruyi_jingu_bang",
+            "mythicalswords:jian"
+          ] }
+        ]
+      }
+    }
+  },
+  "requirements": [ [ "get_weapon" ] ]
+}

@@ -1,0 +1,365 @@
+==============================================
+MYTHICAL SWORDS MOD - TEXTURAS FALTANTES
+==============================================
+
+ESTADO ACTUAL:
+✅ Entidades: 10/16 (Odín, Loki, Atenea, Izanagi, Oni, Quetzalcóatl, Sun Wukong, Vishnu, Anubis, Lugh YA EXISTEN)
+✅ Items: 27/46 (Mayoría de armas y materiales YA EXISTEN)
+❌ Bloques: 2/3 (Falta Sacred Iron Ore)
+
+==============================================
+TEXTURAS FALTANTES - ENTIDADES (64x64)
+==============================================
+
+--- BOSSES PENDIENTES ---
+
+1. SUSANOO (Japonés)
+Archivo: susanoo.png
+Tamaño: 64x64 píxeles
+Prompt detallado:
+Create a 64x64 pixel art Minecraft entity skin texture for Susanoo, the Japanese storm god. 
+FRONT VIEW (main body):
+- Head: Wild, spiky black hair flowing upward like storm winds
+- Face: Fierce expression with glowing blue eyes, stern eyebrows
+- Body: Traditional Japanese armor (yoroi) in dark blue and grey tones
+- Chest: Lightning bolt patterns across the breastplate
+- Arms: Armored gauntlets with storm cloud motifs
+- Legs: Armored greaves with wind swirl patterns
+BACK VIEW:
+- Flowing cape with storm cloud patterns
+- Lightning streaks down the back
+Color Palette: Electric Blue (#00BFFF), Storm Grey (#696969), White Lightning (#FFFFFF), Dark Armor (#2F4F4F)
+Style: Minecraft entity skin format, pixelated, symmetrical front/back
+
+2. SHIVA (Hindú)
+Archivo: shiva.png
+Tamaño: 64x64 píxeles
+Prompt detallado:
+Create a 64x64 pixel art Minecraft entity skin texture for Shiva, the Hindu god of destruction.
+FRONT VIEW:
+- Head: Third eye on forehead (glowing red), crescent moon in matted hair
+- Face: Ash-grey skin, serene but powerful expression
+- Neck: Blue throat (Neelkanth), cobra wrapped around
+- Body: Bare torso covered in sacred ash (grey-white)
+- Arms: Four arms - holding trident, drum, making gestures
+- Waist: Tiger skin loincloth
+- Legs: Sitting in meditation pose or standing
+BACK VIEW:
+- Matted dreadlocks flowing down
+- Trident visible on back
+Color Palette: Ash Grey (#D3D3D3), Blue Throat (#4169E1), Red Third Eye (#FF0000), Gold Ornaments (#FFD700), Tiger Orange (#FFA500)
+Style: Minecraft entity skin, mystical and divine appearance
+
+3. RA (Egipcio)
+Archivo: ra.png
+Tamaño: 64x64 píxeles
+Prompt detallado:
+Create a 64x64 pixel art Minecraft entity skin texture for Ra, the Egyptian sun god.
+FRONT VIEW:
+- Head: Falcon head with sharp beak, golden eyes
+- Crown: Large sun disk (circle) above head, glowing
+- Body: Pharaonic robes in gold and white
+- Chest: Ankh symbol and sun medallion
+- Arms: Holding was-scepter and ankh
+- Waist: Golden belt with hieroglyphs
+- Legs: White linen wrappings
+BACK VIEW:
+- Sun disk radiating from back
+- Golden wings folded
+- Hieroglyphic patterns on robe
+Color Palette: Sun Gold (#FFD700), Bright Yellow (#FFFF00), White Linen (#FFFFFF), Falcon Brown (#8B4513), Red Sun Disk (#FF4500)
+Style: Minecraft entity skin, Egyptian deity aesthetic
+
+4. DRAGÓN AMARILLO (Chino)
+Archivo: dragon_amarillo.png
+Tamaño: 64x64 píxeles
+Prompt detallado:
+Create a 64x64 pixel art Minecraft entity skin texture for the Yellow Dragon (Huanglong), Chinese imperial dragon.
+FRONT VIEW:
+- Head: Dragon head with antlers, whiskers, fierce eyes
+- Snout: Long snout with sharp teeth visible
+- Body: Serpentine scaled body in imperial yellow
+- Arms: Four clawed limbs (5 claws each - imperial)
+- Chest: Pearl or orb held in claws
+- Scales: Detailed scale pattern in yellow and gold
+BACK VIEW:
+- Long serpentine tail
+- Spinal ridge with spikes
+- Cloud patterns around body
+Color Palette: Imperial Yellow (#FFFF00), Gold Scales (#DAA520), Amber (#FFBF00), White Clouds (#FFFFFF), Red Eyes (#FF0000)
+Style: Minecraft entity skin, majestic Chinese dragon, elongated body
+
+5. CÚCHULAINN (Celta)
+Archivo: cuchulainn.png
+Tamaño: 64x64 píxeles
+Prompt detallado:
+Create a 64x64 pixel art Minecraft entity skin texture for Cúchulainn, the Celtic hero in warp spasm form.
+FRONT VIEW:
+- Head: Wild red hair standing on end, one eye bulging
+- Face: Distorted features showing battle fury, gritted teeth
+- Body: Muscular, twisted physique showing transformation
+- Chest: Bare torso with blue woad war paint patterns
+- Arms: Oversized, muscular arms with veins visible
+- Hands: Clawed, grasping Gae Bulg spear
+- Legs: Powerful, stance ready for battle
+BACK VIEW:
+- Spear strapped to back
+- More woad patterns
+- Battle scars visible
+Color Palette: Flesh Tone (#FFC0CB), Red Hair (#8B0000), Blue Woad (#000080), Blood Red (#DC143C), Iron Grey weapon (#808080)
+Style: Minecraft entity skin, fierce warrior, distorted battle form
+
+==============================================
+TEXTURAS FALTANTES - BLOQUES (16x16)
+==============================================
+
+6. SACRED IRON ORE
+Archivo: sacred_iron_ore.png
+Ubicación: src/main/resources/assets/mythicalswords/textures/block/
+Tamaño: 16x16 píxeles
+Prompt detallado:
+Create a 16x16 pixel art block texture for Sacred Iron Ore in Minecraft style.
+Appearance: Stone base with embedded sacred iron ore veins
+- Base: Grey stone texture (similar to vanilla stone)
+- Ore veins: Gold and white glowing veins running through
+- Pattern: 3-4 ore spots distributed across the block
+- Glow: Subtle divine glow effect on the ore parts
+- Style: Match vanilla Minecraft ore block aesthetic
+Color Palette: Stone Grey (#808080), Sacred Gold (#FFD700), Divine White (#FFFFFF), Dark Stone (#404040)
+Reference: Similar to vanilla iron ore but with gold/white divine coloring
+
+==============================================
+TEXTURAS FALTANTES - ITEMS (16x16)
+==============================================
+
+Los siguientes items aún no tienen textura. Todos son 16x16 pixel art estilo Minecraft item.
+
+--- MATERIALES JAPONESES ---
+
+7. ACERO TAMAHAGANE INGOT
+Archivo: acero_tamahagane_ingot.png
+Prompt: 16x16 pixel art icon for Acero Tamahagane Ingot. Folded steel ingot with visible layering pattern showing traditional Japanese sword-making technique. Dark steel with silver highlights showing the folded layers. Palette: Dark Steel (#2F4F4F), Charcoal (#36454F), Silver highlights (#C0C0C0).
+
+8. GEM OF BISHAMON
+Archivo: gem_of_bishamon.png
+Prompt: 16x16 pixel art icon for Gem of Bishamon. Radiant sapphire blue gem with divine glow, octagonal cut, emanating light. Palette: Sapphire Blue (#0F52BA), Light Blue (#ADD8E6), White sparkle (#FFFFFF).
+
+9. SACRED WATER OF AMATERASU
+Archivo: sacred_water_amaterasu.png
+Prompt: 16x16 pixel art icon for Sacred Water of Amaterasu. Small glass vial containing glowing golden-white liquid, sun goddess essence visible inside. Palette: Gold (#FFD700), White (#FFFFFF), Glass Blue (#E0FFFF).
+
+10. SOUL OF THE SWORDSMITH
+Archivo: soul_swordsmith.png
+Prompt: 16x16 pixel art icon for Soul of the Swordsmith. Ethereal blue-white soul essence shaped like a small hammer or anvil, ghostly and translucent. Palette: Spirit Blue (#E0FFFF), White (#FFFFFF), Silver (#C0C0C0).
+
+--- MATERIALES GRIEGOS ---
+
+11. FEATHER OF VICTORY
+Archivo: feather_of_victory.png
+Prompt: 16x16 pixel art icon for Feather of Victory. Single golden wing feather with divine glow, Nike's feather. Elegant curve, shimmering. Palette: Gold (#FFD700), White (#FFFFFF), Yellow glow (#FFFF00).
+
+12. BRONCE BENDITO
+Archivo: bronce_bendito.png
+Prompt: 16x16 pixel art icon for Bronce Bendito (Blessed Bronze). Bronze ingot with holy Greek markings or symbols etched on surface. Palette: Bronze (#CD7F32), Gold highlights (#DAA520), White symbols.
+
+--- MATERIALES MESOAMERICANOS ---
+
+13. OBSIDIANA RITUAL SHARD
+Archivo: obsidiana_ritual_shard.png
+Prompt: 16x16 pixel art icon for Obsidiana Ritual Shard. Sharp, glassy black obsidian shard with jagged edges, used in Aztec rituals. Reflective surface. Palette: Black (#000000), Dark Purple reflection (#4B0082), Grey highlights.
+
+14. FILO DE PLUMA DE QUETZAL
+Archivo: filo_pluma_quetzal.png
+Prompt: 16x16 pixel art icon for Filo de Pluma de Quetzal. Razor-sharp iridescent green feather from Quetzal bird, magically hardened. Palette: Iridescent Green (#00FF00), Teal (#008080), Blue-green shimmer.
+
+--- MATERIALES CHINOS ---
+
+15. JADE IMPERIAL INGOT
+Archivo: jade_imperial_ingot.png
+Prompt: 16x16 pixel art icon for Jade Imperial Ingot. Carved green jade in ingot shape, smooth polished surface with Chinese character or pattern. Palette: Jade Green (#00A86B), White veins (#FFFFFF), Dark Green (#006400).
+
+16. DUST OF LONGEVITY
+Archivo: dust_of_longevity.png
+Prompt: 16x16 pixel art icon for Dust of Longevity. Pile of glowing golden dust particles, magical Chinese alchemy ingredient. Sparkling effect. Palette: Gold (#FFD700), Yellow (#FFFF00), White sparkles.
+
+17. ESSENCE OF RIGHTEOUSNESS
+Archivo: essence_righteousness.png
+Prompt: 16x16 pixel art icon for Essence of Righteousness. Glowing white essence in a small bottle or vial, pure and radiant. Palette: White (#FFFFFF), Light Blue (#ADD8E6), Glass container.
+
+18. SOUL FRAGMENT
+Archivo: soul_fragment.png
+Prompt: 16x16 pixel art icon for Soul Fragment. Broken piece of a soul, translucent and glowing, ethereal appearance. Palette: Ghost White (#F8F8FF), Pale Blue (#E0FFFF), Transparent edges.
+
+19. LOVER'S BOND TOKEN
+Archivo: lovers_bond_token.png
+Prompt: 16x16 pixel art icon for Lover's Bond Token. Two intertwined rings or hearts forming a romantic symbol. Palette: Gold (#FFD700), Red (#FF0000), Pink accent.
+
+20. MOONSTONE SHARD
+Archivo: moonstone_shard.png
+Prompt: 16x16 pixel art icon for Moonstone Shard. Crescent-shaped shard glowing with soft moonlight, mystical. Palette: Moon White (#F5F5F5), Pale Blue (#E6E6FA), Silver shimmer.
+
+--- MATERIALES HINDÚES ---
+
+21. AGNI'S FLAME CORE
+Archivo: agnis_flame_core.png
+Prompt: 16x16 pixel art icon for Agni's Flame Core. Burning core of eternal fire, constantly aflame, divine fire essence. Palette: Fire Red (#FF0000), Orange (#FFA500), Yellow flames (#FFFF00).
+
+22. VAJRA CRYSTAL
+Archivo: vajra_crystal.png
+Prompt: 16x16 pixel art icon for Vajra Crystal. Diamond-hard crystal sparking with electricity, thunderbolt weapon essence. Palette: Diamond Blue (#E0FFFF), Electric White (#FFFFFF), Lightning Yellow.
+
+23. BAMBOO REINFORCED SHAFT
+Archivo: bamboo_shaft.png
+Prompt: 16x16 pixel art icon for Bamboo Reinforced Shaft. Strong bamboo pole wrapped with binding cloth strips. Palette: Bamboo Green (#8FBC8F), Brown (#8B4513), White cloth.
+
+24. BINDING CLOTH OF THE MONKS
+Archivo: binding_cloth.png
+Prompt: 16x16 pixel art icon for Binding Cloth of the Monks. Orange saffron cloth strip with sacred symbols or Sanskrit. Palette: Saffron Orange (#FF9933), White symbols, Gold trim.
+
+--- MATERIALES EGIPCIOS ---
+
+25. RA'S SUN CORE
+Archivo: ras_sun_core.png
+Prompt: 16x16 pixel art icon for Ra's Sun Core. Miniature sun contained in a spherical gem, radiating light. Palette: Sun Yellow (#FFFF00), Orange (#FFA500), White glow, Red core.
+
+26. SCORPION VENOM GLAND
+Archivo: scorpion_venom_gland.png
+Prompt: 16x16 pixel art icon for Scorpion Venom Gland. Green, dripping gland from giant scorpion, toxic appearance. Palette: Poison Green (#32CD32), Dark Green (#006400), Yellow-green drips.
+
+27. CAÑA DEL NILO
+Archivo: cana_nilo.png
+Prompt: 16x16 pixel art icon for Caña del Nilo (Nile Reed). Reed plant from the Nile river, green and sturdy. Palette: Reed Green (#228B22), Brown base, Light green tips.
+
+28. BONE HANDLE
+Archivo: bone_handle.png
+Prompt: 16x16 pixel art icon for Bone Handle. Carved bone handle for weapons, ancient Egyptian style. Palette: Bone White (#F5F5DC), Cream (#FFFDD0), Brown carvings.
+
+--- MATERIALES CELTAS ---
+
+29. CELTIC MOONSTONE
+Archivo: celtic_moonstone.png
+Prompt: 16x16 pixel art icon for Celtic Moonstone. Smooth, milky stone glowing with moonlight, Celtic druidic gem. Palette: Moon White (#F5F5F5), Pale Blue (#E6E6FA), Silver shimmer.
+
+30. DRUIDIC OAK CORE
+Archivo: druidic_oak_core.png
+Prompt: 16x16 pixel art icon for Druidic Oak Core. Heart of an ancient oak tree with glowing Celtic runes carved into it. Palette: Oak Brown (#8B4513), Green Glow (#00FF00), Gold runes.
+
+==============================================
+ARMAS PENDIENTES (16x16)
+==============================================
+
+--- ARMAS MESOAMERICANAS ---
+
+31. MACUAHUITL
+Archivo: macuahuitl.png
+Prompt: 16x16 pixel art icon for Macuahuitl. Aztec wooden club embedded with sharp obsidian blades along edges. Palette: Wood Brown (#8B4513), Obsidian Black (#000000), Grey stone.
+
+32. ATL-TLACHINOLLI
+Archivo: atl_tlachinolli.png
+Prompt: 16x16 pixel art icon for Atl-Tlachinolli (Water-Fire spear). Spear symbolizing burning water, half blue half red/orange. Palette: Fire Red (#FF4500), Water Blue (#1E90FF), Gold shaft.
+
+33. SERPIENTE DE FUEGO (Xiuhcoatl)
+Archivo: serpiente_fuego.png
+Prompt: 16x16 pixel art icon for Serpiente de Fuego. Weapon shaped like a segmented fire serpent, Aztec fire snake. Palette: Fire Orange (#FF4500), Gold (#FFD700), Red scales.
+
+--- ARMAS CHINAS ---
+
+34. HOJA DE LOS OCHO INMORTALES
+Archivo: hoja_ocho_inmortales.png
+Prompt: 16x16 pixel art icon for Hoja de los Ocho Inmortales. Dao sword with Taoist symbols, mystical and ancient. Palette: Steel (#C0C0C0), Jade Green handle (#00A86B), Gold symbols.
+
+35. ZHANLU
+Archivo: zhanlu.png
+Prompt: 16x16 pixel art icon for Zhanlu sword. Black blade that reflects no light, the sword of integrity. Completely black. Palette: Deep Black (#000000), Dark Grey (#2F4F4F).
+
+36. GAN JIANG
+Archivo: gan_jiang.png
+Prompt: 16x16 pixel art icon for Gan Jiang sword. Masculine sword with a fiery spirit, paired with Mo Ye. Palette: Steel (#C0C0C0), Red Aura (#FF0000), Orange glow.
+
+37. HOJA LUNAR
+Archivo: hoja_lunar.png
+Prompt: 16x16 pixel art icon for Hoja Lunar (Moon Blade). Curved blade resembling a crescent moon, pale and glowing. Palette: Moon White (#F0F8FF), Pale Blue (#E0FFFF), Silver.
+
+38. RUYI JINGU BANG
+Archivo: ruyi_jingu_bang.png
+Prompt: 16x16 pixel art icon for Ruyi Jingu Bang (Sun Wukong's staff). Red staff with golden bands at both ends. Palette: Red (#FF0000), Gold bands (#FFD700), Dark red core.
+
+39. ESPADA DEL DRAGÓN AMARILLO
+Archivo: espada_dragon_amarillo.png
+Prompt: 16x16 pixel art icon for Espada del Dragón Amarillo. Golden sword with a dragon-shaped hilt, imperial aesthetic. Palette: Imperial Gold (#FFD700), Amber (#FFBF00), Red dragon details.
+
+--- ARMAS HINDÚES ---
+
+40. ASTRA DE AGNI
+Archivo: astra_agni.png
+Prompt: 16x16 pixel art icon for Astra de Agni. Arrow or spear tip engulfed in divine flames, fire weapon. Palette: Fire Orange (#FF4500), Yellow flames (#FFFF00), Red core, Steel tip.
+
+41. VAJRA
+Archivo: vajra.png
+Prompt: 16x16 pixel art icon for Vajra. Double-sided club with ribbed spherical heads, crackling with lightning. Palette: Gold (#FFD700), Electric Blue (#00FFFF), White lightning.
+
+42. SUDARSHANA CHAKRA
+Archivo: sudarshana_chakra.png
+Prompt: 16x16 pixel art icon for Sudarshana Chakra. Spinning gold disc with serrated edges, divine aura. Palette: Gold (#FFD700), Orange glow (#FFA500), White light.
+
+43. TRISHULA
+Archivo: trishula.png
+Prompt: 16x16 pixel art icon for Trishula. Three-pronged trident, symbol of Shiva. Palette: Steel (#C0C0C0), Dark Blue (#00008B), Silver shine.
+
+--- ARMAS EGIPCIAS ---
+
+44. LANZA DE SOBEK
+Archivo: lanza_sobek.png
+Prompt: 16x16 pixel art icon for Lanza de Sobek. Spear with a crocodile tooth tip, green and gold Egyptian style. Palette: Crocodile Green (#228B22), Gold shaft (#FFD700), White tooth.
+
+45. DAGA DE ESCORPIÓN
+Archivo: daga_escorpion.png
+Prompt: 16x16 pixel art icon for Daga de Escorpión. Curved dagger resembling a scorpion tail, poisonous tip. Palette: Sand (#F4A460), Poison Purple (#800080), Gold handle.
+
+46. KHOPESH DE RA
+Archivo: khopesh_ra.png
+Prompt: 16x16 pixel art icon for Khopesh de Ra. Egyptian sickle-sword glowing like the sun. Palette: Gold (#FFD700), Sun Yellow (#FFFF00), Orange glow.
+
+47. BÁCULO DE ANUBIS
+Archivo: baculo_anubis.png
+Prompt: 16x16 pixel art icon for Báculo de Anubis. Black staff topped with a jackal head (Anubis). Palette: Black (#000000), Gold accents (#FFD700), Red eyes.
+
+--- ARMAS CELTAS ---
+
+48. RED BRANCH BLADE
+Archivo: red_branch_blade.png
+Prompt: 16x16 pixel art icon for Red Branch Blade. Iron sword with a hilt wrapped in red cloth, rustic Celtic warrior weapon. Palette: Iron Grey (#A9A9A9), Red cloth (#8B0000), Brown leather.
+
+49. FRAGARACH
+Archivo: fragarach.png
+Prompt: 16x16 pixel art icon for Fragarach (The Answerer). Sword that pierces any armor, whispering wind effect around it. Palette: Silver (#C0C0C0), Wind Grey (#D3D3D3), White wisps.
+
+50. GAE BULG
+Archivo: gae_bulg.png
+Prompt: 16x16 pixel art icon for Gae Bulg. Barbed spear made of sea-monster bone, brutal design with hooks. Palette: Bone White (#F5F5DC), Blood Red (#8B0000), Grey barbs.
+
+--- ARMAS JAPONESAS ---
+
+51. NAGINATA DE BISHAMON
+Archivo: naginata_bishamon.png
+Prompt: 16x16 pixel art icon for Naginata de Bishamon. Long polearm with a curved blade at the top, ornate gold details on shaft, divine Japanese aesthetic. Palette: Deep Red blade (#8B0000), Gold (#FFD700), Steel (#C0C0C0), Black handle.
+
+52. TOTSUKA-NO-TSURUGI
+Archivo: totsuka_no_tsurugi.png
+Prompt: 16x16 pixel art icon for Totsuka-no-Tsurugi. Mythical sword used to slay gods, ancient blade with cracks but glowing with spiritual blue energy. Palette: Stone Grey (#808080), Spirit Blue (#E0FFFF), White glow (#FFFFFF).
+
+==============================================
+RESUMEN
+==============================================
+
+TOTAL FALTANTE: 52 texturas
+- Entidades: 5 (Susanoo, Shiva, Ra, Dragón Amarillo, Cúchulainn)
+- Bloques: 1 (Sacred Iron Ore)
+- Items: 46 (Materiales y armas de todas las mitologías)
+
+PRIORIDAD ALTA (Para funcionalidad actual):
+1. Sacred Iron Ore (bloque necesario para recetas)
+2. Feather of Victory (material griego para Nike Blade)
+3. Bronce Bendito (material griego para Xiphos)
+
+==============================================

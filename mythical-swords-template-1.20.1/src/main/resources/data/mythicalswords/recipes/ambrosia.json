@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"GGG",
+		"GSG",
+		"GGG"
+	],
+	"key": {
+		"G": {"item": "minecraft:gold_ingot"},
+		"S": {"item": "mythicalswords:sun_blessed_alloy"}
+	},
+	"result": {"item": "mythicalswords:ambrosia", "count": 1}
+}

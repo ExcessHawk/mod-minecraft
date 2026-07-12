@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "SIS",
+    "OOO"
+  ],
+  "key": {
+    "M": {"item": "mythicalswords:mythril_ingot"},
+    "S": {"item": "mythicalswords:sacred_iron_ingot"},
+    "I": {"item": "mythicalswords:shard_of_divinity"},
+    "O": {"item": "minecraft:obsidian"}
+  },
+  "result": {
+    "item": "mythicalswords:mythical_forge",
+    "count": 1
+  }
+}

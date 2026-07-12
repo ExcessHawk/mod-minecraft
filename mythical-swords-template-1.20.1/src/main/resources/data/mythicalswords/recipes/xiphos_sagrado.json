@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " IB",
+    "SD "
+  ],
+  "key": {
+    "I": {
+      "item": "mythicalswords:sacred_iron_ingot"
+    },
+    "B": {
+      "item": "mythicalswords:bronce_bendito"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "mythicalswords:shard_of_divinity"
+    }
+  },
+  "result": {
+    "item": "mythicalswords:xiphos_sagrado",
+    "count": 1
+  }
+}

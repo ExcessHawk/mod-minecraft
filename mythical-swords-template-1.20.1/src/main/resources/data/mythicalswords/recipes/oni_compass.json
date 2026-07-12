@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["DDD", "DCD", "DDD"],
+  "key": {
+    "D": {"item": "mythicalswords:tamahagane_ingot"},
+    "C": {"item": "minecraft:compass"}
+  },
+  "result": {"item": "mythicalswords:oni_compass", "count": 1}
+}

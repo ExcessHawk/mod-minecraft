@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["DDD", "DCD", "DDD"],
+  "key": {
+    "D": {"item": "mythicalswords:jade_imperial_ingot"},
+    "C": {"item": "minecraft:compass"}
+  },
+  "result": {"item": "mythicalswords:bamboo_compass", "count": 1}
+}

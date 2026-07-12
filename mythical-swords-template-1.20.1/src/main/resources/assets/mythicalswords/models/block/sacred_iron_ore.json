@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mythicalswords:block/sacred_iron_ore"
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "mythicalswords:item/totsuka_no_tsurugi"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [8, -91, -15],
+			"translation": [-0.25, 4.25, 3.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "totsuka_no_tsurugi",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": []
+		}
+	]
+}

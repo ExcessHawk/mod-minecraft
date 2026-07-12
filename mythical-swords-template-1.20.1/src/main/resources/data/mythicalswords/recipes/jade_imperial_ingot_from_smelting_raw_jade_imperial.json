@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "jade_imperial_ingot",
+  "ingredient": {
+    "item": "mythicalswords:raw_jade_imperial"
+  },
+  "result": "mythicalswords:jade_imperial_ingot"
+}

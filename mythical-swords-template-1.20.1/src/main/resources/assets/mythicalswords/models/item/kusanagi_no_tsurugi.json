@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "mythicalswords:item/kusanagi_no_tsurugi"
+  }
+}

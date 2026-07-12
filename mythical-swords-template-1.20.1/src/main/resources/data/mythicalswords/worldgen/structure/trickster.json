@@ -1,0 +1,7 @@
+{
+  "type": "mythicalswords:mythical",
+  "variant": "trickster",
+  "biomes": "#mythicalswords:has_structure/trickster",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

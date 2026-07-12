@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"MEM",
+		"EGE",
+		"MEM"
+	],
+	"key": {
+		"M": {"item": "mythicalswords:moonstone_shard"},
+		"E": {"item": "mythicalswords:essence_of_righteousness"},
+		"G": {"item": "minecraft:glowstone"}
+	},
+	"result": {"item": "mythicalswords:elixir_of_the_gods", "count": 1}
+}

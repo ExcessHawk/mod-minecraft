@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{"item": "minecraft:feather"},
+		{"item": "minecraft:feather"},
+		{"item": "minecraft:sugar"},
+		{"item": "minecraft:sugar"},
+		{"item": "mythicalswords:moonstone_shard"}
+	],
+	"result": {"item": "mythicalswords:hermes_draught", "count": 1}
+}

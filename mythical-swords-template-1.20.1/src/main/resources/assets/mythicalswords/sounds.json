@@ -1,0 +1,34 @@
+{
+  "weapon.swing.legendary": {
+    "subtitle": "subtitles.mythicalswords.weapon.swing",
+    "sounds": [{"name": "item.trident.throw", "type": "event", "volume": 1.0, "pitch": 0.9}]
+  },
+  "weapon.swing.rare": {
+    "subtitle": "subtitles.mythicalswords.weapon.swing",
+    "sounds": [{"name": "entity.player.attack.sweep", "type": "event", "volume": 0.8, "pitch": 1.1}]
+  },
+  "weapon.level_up": {
+    "subtitle": "subtitles.mythicalswords.weapon.level_up",
+    "sounds": [{"name": "ui.toast.challenge_complete", "type": "event", "volume": 0.7, "pitch": 1.2}]
+  },
+  "ability.activate": {
+    "subtitle": "subtitles.mythicalswords.ability.activate",
+    "sounds": [{"name": "block.enchantment_table.use", "type": "event", "volume": 0.8, "pitch": 1.0}]
+  },
+  "boss.spawn": {
+    "subtitle": "subtitles.mythicalswords.boss.spawn",
+    "sounds": [{"name": "entity.wither.spawn", "type": "event", "volume": 1.0, "pitch": 0.8}]
+  },
+  "boss.death": {
+    "subtitle": "subtitles.mythicalswords.boss.death",
+    "sounds": [{"name": "entity.wither.death", "type": "event", "volume": 1.0, "pitch": 0.9}]
+  },
+  "boss.phase_transition": {
+    "subtitle": "subtitles.mythicalswords.boss.phase_transition",
+    "sounds": [{"name": "entity.ender_dragon.growl", "type": "event", "volume": 0.9, "pitch": 1.0}]
+  },
+  "forge.operate": {
+    "subtitle": "subtitles.mythicalswords.forge.operate",
+    "sounds": [{"name": "block.anvil.use", "type": "event", "volume": 0.8, "pitch": 1.1}]
+  }
+}

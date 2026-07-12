@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MCM",
+    " S "
+  ],
+  "key": {
+    "M": {
+      "item": "mythicalswords:mythril_ingot"
+    },
+    "C": {
+      "item": "minecraft:compass"
+    },
+    "S": {
+      "item": "mythicalswords:sacred_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "mythicalswords:camelot_compass",
+    "count": 1
+  }
+}

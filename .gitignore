@@ -1,0 +1,25 @@
+# Gradle
+**/build/
+**/.gradle/
+**/out/
+
+# Minecraft dev runtime
+**/run/
+**/runs/
+
+# Logs
+*.log
+console.log
+
+# IDE / local
+.idea/
+*.iml
+.vscode/
+.claude/settings.local.json
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Backups
+inner-git-backup/

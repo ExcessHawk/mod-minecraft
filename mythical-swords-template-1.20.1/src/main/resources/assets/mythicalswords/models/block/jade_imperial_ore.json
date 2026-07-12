@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "mythicalswords:block/jade_imperial_ore"
+  }
+}

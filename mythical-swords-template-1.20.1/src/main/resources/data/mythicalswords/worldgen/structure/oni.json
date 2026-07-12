@@ -1,0 +1,7 @@
+{
+  "type": "mythicalswords:mythical",
+  "variant": "oni",
+  "biomes": "#mythicalswords:has_structure/oni",
+  "step": "surface_structures",
+  "spawn_overrides": {}
+}

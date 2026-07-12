@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " M ",
+    " MA",
+    "SF "
+  ],
+  "key": {
+    "M": {
+      "item": "mythicalswords:mythril_ingot"
+    },
+    "A": {
+      "item": "mythicalswords:sun_blessed_alloy"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "F": {
+      "item": "mythicalswords:feather_of_victory"
+    }
+  },
+  "result": {
+    "item": "mythicalswords:nike_blade",
+    "count": 1
+  }
+}
