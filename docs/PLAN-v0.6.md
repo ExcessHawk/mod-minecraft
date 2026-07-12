@@ -29,19 +29,10 @@ Checklist runClient:
 
 ## Fase 1 — Base técnica (mediana, va primero porque toca worldgen que todo lo demás usa)
 
-### Menas por bioma
-Hoy: todas `foundInOverworld()`. Cambiar a `BiomeSelectors` reales:
-- [ ] mythril → montañas/picos (arthurian)
-- [ ] northsteel → biomas fríos/nieve (norse)
-- [ ] sacred_iron → llanuras/colinas con flores (greek)
-- [ ] tamahagane → cerezo/bosque oscuro (japanese)
-- [ ] jade_imperial → jungla/bambú (chinese)
-- [ ] obsidiana_ritual → badlands/jungla dispersa (mesoamerican)
-- [ ] orichalcum → océano profundo (atlantean!)
-- [ ] uru → montañas nevadas raras
-- [ ] voidsteel → deepslate profundo (y<0)
-- [ ] froststeel → picos helados
-- [ ] Actualizar tooltips/guía con dónde encontrar cada una
+### Menas por bioma ✅ (2026-07-12)
+`ModOreGeneration` refactorizado a tabla declarativa (`record OreEntry` + loop):
+- [x] mythril → IS_MOUNTAIN | northsteel → IS_TAIGA + nevados | sacred_iron → llanuras/meadow/flower_forest | tamahagane → cherry_grove + dark_forest | jade → jungle + bamboo | obsidiana → IS_BADLANDS + sparse_jungle | orichalcum → IS_DEEP_OCEAN | uru → picos (jagged/frozen/stony) | voidsteel → deep_dark + dripstone_caves (JSON ya lo tenía a y -64..-8) | froststeel → hielo (frozen_peaks/ice_spikes/snowy_slopes/frozen_ocean)
+- [ ] Actualizar tooltips/guía con dónde encontrar cada una (va con la guía de F4)
 
 ### Compat JEI/REI
 - [ ] Plugin REI (el estándar en Fabric): categoría "Forja Mítica" con 3 tipos de receta: reparar (arma+material por mitología), mejorar (lingote+catalizador por tier), runas (material→encantamiento)
