@@ -34,9 +34,10 @@ Checklist runClient:
 - [x] mythril → IS_MOUNTAIN | northsteel → IS_TAIGA + nevados | sacred_iron → llanuras/meadow/flower_forest | tamahagane → cherry_grove + dark_forest | jade → jungle + bamboo | obsidiana → IS_BADLANDS + sparse_jungle | orichalcum → IS_DEEP_OCEAN | uru → picos (jagged/frozen/stony) | voidsteel → deep_dark + dripstone_caves (JSON ya lo tenía a y -64..-8) | froststeel → hielo (frozen_peaks/ice_spikes/snowy_slopes/frozen_ocean)
 - [ ] Actualizar tooltips/guía con dónde encontrar cada una (va con la guía de F4)
 
-### Compat JEI/REI
-- [ ] Plugin REI (el estándar en Fabric): categoría "Forja Mítica" con 3 tipos de receta: reparar (arma+material por mitología), mejorar (lingote+catalizador por tier), runas (material→encantamiento)
-- [ ] Dependencia opcional (solo carga si REI presente)
+### Compat REI ✅ (2026-07-12)
+- [x] Plugin REI: categoría "Forja Mítica" (icono = bloque de forja, workstation registrada) con displays generados de las MISMAS tablas de `MythicalForgeSystem`: reparar (por arma), mejorar (por arma: lingote+catalizador), grabar runa (7, arma genérica cicla)
+- [x] Dependencia opcional: `modCompileOnly` REI 12.1.785 + entrypoint `rei_client` — solo carga si REI está instalado; `suggests: roughlyenoughitems`
+- Pendiente usuario: probar en su instancia con REI (buscar "Forja Mítica" o click en el bloque)
 
 ## Fase 2 — Combate de bosses 2.0 (grande)
 

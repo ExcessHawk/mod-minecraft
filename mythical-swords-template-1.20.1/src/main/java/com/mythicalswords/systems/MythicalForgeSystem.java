@@ -312,4 +312,9 @@ public class MythicalForgeSystem {
     public static Item getTierCatalyst(WeaponTier tier) {
         return TIER_CATALYSTS.get(tier);
     }
+
+    /** Rune material -> forge-exclusive enchantment (read-only, for recipe viewers). */
+    public static Map<Item, Enchantment> getRuneEnchants() {
+        return java.util.Collections.unmodifiableMap(RUNE_ENCHANTS);
+    }
 }

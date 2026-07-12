@@ -20,6 +20,10 @@ repositories {
 			includeGroup("com.eliotlash.mclib")
 		}
 	}
+	// REI + cloth-config (recipe viewer compat, compile-only)
+	maven { name = 'shedaniel'; url 'https://maven.shedaniel.me/' }
+	// architectury (REI dependency)
+	maven { name = 'architectury'; url 'https://maven.architectury.dev/' }
 }
 
 loom {
@@ -46,6 +50,11 @@ dependencies {
 	// GeckoLib (animated models/items)
 	modImplementation "software.bernie.geckolib:geckolib-fabric-${project.minecraft_version}:${project.geckolib_version}"
 	implementation "com.eliotlash.mclib:mclib:20"
+
+	// REI compat: compile-only so REI stays an optional runtime dependency.
+	// The rei_client entrypoint is only invoked when REI is installed.
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${project.rei_version}"
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${project.rei_version}"
 }
 
 processResources {

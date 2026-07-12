@@ -23,6 +23,9 @@
 		],
 		"fabric-datagen": [
 			"com.mythicalswords.MythicalSwordsDataGenerator"
+		],
+		"rei_client": [
+			"com.mythicalswords.compat.rei.MythicalSwordsREIPlugin"
 		]
 	},
 	"mixins": [
@@ -40,6 +43,6 @@
 		"geckolib": ">=4.4"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"roughlyenoughitems": "*"
 	}
 }
