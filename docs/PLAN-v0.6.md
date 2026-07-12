@@ -1,0 +1,103 @@
+# Plan v0.6 — "Mundo Vivo"
+
+Temas elegidos: esbirros por mitología, Dimensión Celestial + boss final, combate de bosses 2.0, progresión (advancements + guía + dragón). Medianos: menas por bioma, compat JEI/REI.
+
+Orden por dependencias. Testing de v0.5 va primero como compuerta (fase 0) — decidido: se planea todo y luego se prueba.
+
+## Fase 0 — Gate: probar v0.5 en juego (ANTES de escribir código de v0.6)
+
+✅ COMPLETADA 2026-07-11 — usuario probó el mod con todos los cambios de v0.5: todo funciona.
+
+Checklist runClient:
+- [ ] Forja: craftear (receta mythril+sacred_iron+shard+obsidiana), colocar, ver modelo 3D + partículas ambientales
+- [ ] GUI: slots visibles, botón no encima del output, nombre "Forja Mítica"
+- [ ] Reparar: material correcto repara y consume 1; incorrecto avisa qué pide
+- [ ] Mejorar: lingote+catalizador correcto por tier; par inválido rechazado; límite 5
+- [ ] Runas: las 7 aplican su encantamiento, suben nivel, respetan máximo; efectos en combate funcionan
+- [ ] Libro encantado: no duplica, respeta conflictos
+- [ ] Drops: matar susanoo/oni/izanagi/quetzalcoatl/rey_arturo → sueltan arma+materiales
+- [ ] Celestial: craftear lingote 3x3, armadura completa, layers visibles puestas
+- [ ] Config: editar mythicalswords.json (ej. bossHealthMultiplier 2.0) y verificar efecto
+- [ ] Boss Altar 3D render + invocación sigue funcionando
+- [ ] Herrero Legendario empuña martillo 3D y lo dropea
+
+## Fase 0.5 — GUI de la Forja con textura propia (PRIMERO, pedido explícito)
+
+- [x] Textura de GUI real 176x166 (`textures/gui/mythical_forge.png`, `scripts/gen-forge-gui.ps1`): panel oscuro con bisel, barra de título con brasas, sockets con marcos de color (dorado=arma, gris=materiales, verde=salida), flecha con punta, separador de inventario
+- [x] `MythicalForgeScreen`: `drawTexture` en vez de rectángulos a mano
+- [x] Etiquetas y botón traducibles: `screen.mythicalswords.forge.*` (Arma/Mat/Sale/Forjar) en 3 idiomas
+
+## Fase 1 — Base técnica (mediana, va primero porque toca worldgen que todo lo demás usa)
+
+### Menas por bioma
+Hoy: todas `foundInOverworld()`. Cambiar a `BiomeSelectors` reales:
+- [ ] mythril → montañas/picos (arthurian)
+- [ ] northsteel → biomas fríos/nieve (norse)
+- [ ] sacred_iron → llanuras/colinas con flores (greek)
+- [ ] tamahagane → cerezo/bosque oscuro (japanese)
+- [ ] jade_imperial → jungla/bambú (chinese)
+- [ ] obsidiana_ritual → badlands/jungla dispersa (mesoamerican)
+- [ ] orichalcum → océano profundo (atlantean!)
+- [ ] uru → montañas nevadas raras
+- [ ] voidsteel → deepslate profundo (y<0)
+- [ ] froststeel → picos helados
+- [ ] Actualizar tooltips/guía con dónde encontrar cada una
+
+### Compat JEI/REI
+- [ ] Plugin REI (el estándar en Fabric): categoría "Forja Mítica" con 3 tipos de receta: reparar (arma+material por mitología), mejorar (lingote+catalizador por tier), runas (material→encantamiento)
+- [ ] Dependencia opcional (solo carga si REI presente)
+
+## Fase 2 — Combate de bosses 2.0 (grande)
+
+Base ya existe: `MythicalBossEntity` con 3 fases (100%→60%→30%).
+- [ ] Animaciones de ataque GeckoLib para los 12 bosses (pendiente desde la migración): swing melee + ataque especial por boss. Blockbench MCP para animar.
+- [ ] Habilidad por fase: fase 2 activa habilidad temática (Odin: rayos, Quetzalcoatl: embestida aérea, Anubis: invoca maldición, etc.), fase 3 = enrage (velocidad/daño+)
+- [ ] Telegrafiado: partículas + sonido 1s antes de ataques fuertes (esquivable)
+- [ ] Sonidos de boss por fase (ya hay eventos registrados, hoy alias vanilla)
+
+## Fase 3 — Esbirros por mitología (grande)
+
+6 mobs menores GeckoLib, spawn en su estructura + invocados por su boss en fase 2:
+- [ ] Draugr (norse) — melee tanque, drop: frozen_soul_crystal raro
+- [ ] Oni Menor (japanese) — rápido agresivo, drop: gem_of_bishamon raro
+- [ ] Momia Sirviente (egyptian) — aplica lentitud, drop: moonstone_shard/sun_blessed_alloy raro
+- [ ] Guerrero Jaguar (mesoamerican) — salta, drop: filo_de_pluma_de_quetzal raro
+- [ ] Hoplita Espectral (greek) — escudo/formación, drop: feather_of_victory raro
+- [ ] Soldado de Terracota (chinese) — se reactiva una vez al "morir", drop: bamboo_reinforced_shaft raro
+- [ ] Spawn: dentro/alrededor de las 9 estructuras existentes (no spawn global)
+- [ ] Loop de economía: esbirros = fuente renovable de materiales rúnicos (los bosses no respawnean)
+
+## Fase 4 — Progresión (mediana)
+
+- [ ] Árbol de advancements: root → rama por mitología (encontrar estructura → matar boss) → "Matadioses" (los 11) → "Forjador Celestial" (lingote) → apunta a dimensión
+- [ ] Recompensas: XP + materiales rúnicos por advancement de boss
+- [ ] Libro guía in-game (item + pantalla custom simple): forja y sus 4 operaciones, tabla de runas, mapa de menas por bioma, bosses y sus brújulas
+
+## Fase 5 — Dimensión Celestial + boss final (muy grande, al último)
+
+- [ ] Bloque `celestial_stone` (+ pulido) para el marco del portal
+- [ ] Portal: marco de celestial_stone activado con Lingote Celestial (ya existe, cierra el loop de Fase 3 v0.5)
+- [ ] Dimensión datapack: islas flotantes (noise end-like), cielo custom, sin lluvia
+- [ ] Estructura: templo celestial con boss altar final
+- [ ] Boss final: **Guardián Celestial** — GeckoLib grande, 3 fases, rota resistencias por afinidad elemental (obliga a cambiar de arma), invoca esbirros de TODAS las mitologías
+- [ ] Drop: **Corazón Celestial** (único por kill)
+
+## Fase 6 — Dragón montable por fin obtenible (chica)
+
+- [ ] Receta: Corazón Celestial + materiales → Huevo de Dragón Mítico
+- [ ] Eclosión (colocar huevo, tiempo) → cría → crece → montable con silla (entity ya existe y funciona)
+- [ ] Quitar el "hidden" del creative tab / spawn egg
+- [ ] Advancement final: "Jinete Celestial"
+
+## Orden de ejecución
+
+F0 (gate testing) → F1 → F2 → F3 → F4 → F5 → F6
+
+Racional: F1 primero (worldgen base + tooling de recetas que la guía de F4 documenta). F2 antes que F3 porque los esbirros reusan la infra de fases/anims. F5 al final porque es lo más grande y F4 le da el camino de progresión. F6 depende del drop de F5.
+
+## Fuera de alcance v0.6 (backlog v0.7+)
+
+- Armas 3D en mano (26 modelos)
+- Sonidos custom completos (solo bosses en F2)
+- Textura GUI de la forja
+- Mixins reales (los templates siguen sin uso)

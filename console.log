@@ -1,0 +1,584 @@
+PS C:\Users\alfredo\Desktop\mod\mod-minecraft\mythical-swords-template-1.20.1> .\gradlew.bat runClient
+
+> Configure project :
+Fabric Loom: 1.6.12
+
+> Task :runClient
+[18:25:10] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.18.1
+[18:25:10] [main/INFO] (FabricLoader) Loading 59 mods:
+        - fabric-api 0.92.6+1.20.1
+        - fabric-api-base 0.4.32+1802ada577
+        - fabric-api-lookup-api-v1 1.6.37+1802ada577
+        - fabric-biome-api-v1 13.0.14+1802ada577
+        - fabric-block-api-v1 1.0.12+1802ada577
+        - fabric-block-view-api-v2 1.0.3+924f046a77
+        - fabric-blockrenderlayer-v1 1.1.42+1802ada577
+        - fabric-client-tags-api-v1 1.1.3+1802ada577
+        - fabric-command-api-v1 1.2.35+f71b366f77
+        - fabric-command-api-v2 2.2.14+1802ada577
+        - fabric-commands-v0 0.2.52+df3654b377
+        - fabric-containers-v0 0.1.67+df3654b377
+        - fabric-content-registries-v0 4.0.13+1802ada577
+        - fabric-convention-tags-v1 1.5.6+1802ada577
+        - fabric-crash-report-info-v1 0.2.20+1802ada577
+        - fabric-data-attachment-api-v1 1.0.2+de0fd6d177
+        - fabric-data-generation-api-v1 12.3.7+1802ada577
+        - fabric-dimensions-v1 2.1.55+1802ada577
+        - fabric-entity-events-v1 1.6.1+1c78457f77
+        - fabric-events-interaction-v0 0.6.5+13a40c6677
+        - fabric-events-lifecycle-v0 0.2.64+df3654b377
+        - fabric-game-rule-api-v1 1.0.41+1802ada577
+        - fabric-gametest-api-v1 1.2.15+1802ada577
+        - fabric-item-api-v1 2.1.29+1802ada577
+        - fabric-item-group-api-v1 4.0.14+1802ada577
+        - fabric-key-binding-api-v1 1.0.38+1802ada577
+        - fabric-keybindings-v0 0.2.36+df3654b377
+        - fabric-lifecycle-events-v1 2.2.23+1802ada577
+        - fabric-loot-api-v2 1.2.3+1802ada577
+        - fabric-loot-tables-v1 1.1.47+9e7660c677
+        - fabric-message-api-v1 5.1.10+1802ada577
+        - fabric-mining-level-api-v1 2.1.52+1802ada577
+        - fabric-model-loading-api-v1 1.0.4+1802ada577
+        - fabric-models-v0 0.4.3+9386d8a777
+        - fabric-networking-api-v1 1.3.14+a158aa0477
+        - fabric-networking-v0 0.3.54+df3654b377
+        - fabric-object-builder-api-v1 11.1.5+e35120df77
+        - fabric-particles-v1 1.1.3+1802ada577
+        - fabric-recipe-api-v1 1.0.24+1802ada577
+        - fabric-registry-sync-v0 2.3.6+1802ada577
+        - fabric-renderer-api-v1 3.2.2+1802ada577
+        - fabric-renderer-indigo 1.5.3+85287f9f77
+        - fabric-renderer-registries-v1 3.2.47+df3654b377
+        - fabric-rendering-data-attachment-v1 0.3.39+92a0d36777
+        - fabric-rendering-fluids-v1 3.0.29+1802ada577
+        - fabric-rendering-v0 1.1.50+df3654b377
+        - fabric-rendering-v1 3.0.9+1802ada577
+        - fabric-resource-conditions-api-v1 2.3.9+1802ada577
+        - fabric-resource-loader-v0 0.11.12+fb82e9d777
+        - fabric-screen-api-v1 2.0.9+1802ada577
+        - fabric-screen-handler-api-v1 1.3.33+1802ada577
+        - fabric-sound-api-v1 1.0.14+1802ada577
+        - fabric-transfer-api-v1 3.3.6+8dd72ea377
+        - fabric-transitive-access-wideners-v1 4.3.2+1802ada577
+        - fabricloader 0.18.1
+        - java 17
+        - minecraft 1.20.1
+        - mixinextras 0.5.0
+        - mythicalswords 0.4.0-alpha
+[18:25:11] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/alfredo/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.16.5+mixin.0.8.7/80fc3a9f592673cea87f4cd702f87991c6c9fe4d/sponge-mixin-0.16.5+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[18:25:11] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[18:25:11] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_16
+[18:25:11] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[18:25:13] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[18:25:19] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 225 milliseconds
+[18:25:23] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[18:25:24] [Render thread/INFO] (Minecraft) Setting user: Player366
+[18:25:24] [Render thread/INFO] (mythicalswords) Mythical Swords Mod initialized!
+[18:25:24] [Render thread/INFO] (mythicalswords) Registering ModSounds for mythicalswords
+[18:25:24] [Render thread/INFO] (mythicalswords) Registering blocks for mythicalswords
+[18:25:24] [Render thread/INFO] (mythicalswords) Registering items for mythicalswords
+[18:25:24] [Render thread/INFO] (mythicalswords) Registered Mythical Swords creative tab
+[18:25:25] [Render thread/INFO] (mythicalswords) Registered ore generation for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Registering entities for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Registering ModBlockEntities for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Registering ModScreenHandlers for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Registering networking for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Registering ModEnchantments for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Registering structures for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Registered structure types for mythicalswords
+[18:25:25] [Render thread/INFO] (mythicalswords) Running registry validation...
+[18:25:25] [Render thread/INFO] (mythicalswords) Validating items...
+[18:25:25] [Render thread/INFO] (mythicalswords) Item validation complete
+[18:25:25] [Render thread/INFO] (mythicalswords) Validating blocks...
+[18:25:25] [Render thread/INFO] (mythicalswords) Block validation complete
+[18:25:25] [Render thread/INFO] (mythicalswords) Validating entities...
+[18:25:25] [Render thread/INFO] (mythicalswords) Entity validation complete
+[18:25:25] [Render thread/INFO] (mythicalswords) Registry validation PASSED - All content registered successfully!
+[18:25:25] [Render thread/INFO] (mythicalswords) Validating affinity visual indicators...
+[18:25:25] [Render thread/INFO] (mythicalswords)   ? All particle types validated
+[18:25:25] [Render thread/INFO] (mythicalswords)   ? All sound events validated
+[18:25:25] [Render thread/INFO] (mythicalswords) ? Affinity visual indicators validated successfully!
+[18:25:25] [Render thread/INFO] (mythicalswords)   - 6 elemental affinities configured
+[18:25:25] [Render thread/INFO] (mythicalswords)   - Colored particle effects per affinity
+[18:25:25] [Render thread/INFO] (mythicalswords)   - Sound effects on affinity proc
+[18:25:25] [Render thread/INFO] (mythicalswords) Mythical Swords Mod registration complete!
+[18:25:25] [Render thread/INFO] (mythicalswords) Mythical Swords Client initialized!
+[18:25:25] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[18:25:26] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
+[18:25:28] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-lifecycle-events-v1, fabric-containers-v0, fabric-command-api-v2, fabric-model-loading-api-v1, fabric-item-group-api-v1, fabric-renderer-registries-v1, fabric-biome-api-v1, fabric-screen-api-v1, fabric-keybindings-v0, fabric-registry-sync-v0, fabric-resource-loader-v0, fabric-item-api-v1, fabric-screen-handler-api-v1, fabric-client-tags-api-v1, fabric-data-generation-api-v1, fabric-commands-v0, fabric-object-builder-api-v1, fabric-loot-api-v2, fabric-command-api-v1, fabric-convention-tags-v1, fabric-crash-report-info-v1, fabric-rendering-v0, fabric-networking-api-v1, fabric-models-v0, fabric-resource-conditions-api-v1, fabric-networking-v0, fabric-data-attachment-api-v1, fabric-rendering-fluids-v1, fabric-events-lifecycle-v0, fabric-content-registries-v0, fabric-loot-tables-v1, fabric-key-binding-api-v1, fabric-mining-level-api-v1, fabric-gametest-api-v1, fabric-dimensions-v1, fabric-api-lookup-api-v1, fabric-block-api-v1, fabric-recipe-api-v1, fabric-transitive-access-wideners-v1, fabric-message-api-v1, mythicalswords, fabric-renderer-api-v1, fabric-particles-v1, fabric-rendering-data-attachment-v1, fabricloader, fabric-blockrenderlayer-v1, fabric-api-base, fabric-rendering-v1, fabric-sound-api-v1, fabric-renderer-indigo, fabric-transfer-api-v1, fabric-entity-events-v1, fabric-block-view-api-v2, fabric-api, fabric-events-interaction-v0, fabric-game-rule-api-v1)
+[18:25:29] [Worker-Main-2/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
+[18:25:29] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: java.lang.RuntimeException: Failed to parse into SignedJWT: FabricMC
+[18:25:29] [Worker-Main-10/WARN] (Minecraft) Texture mythicalswords:item/totsuka_no_tsurugi with size 676x676 limits mip level from 4 to 2
+[18:25:29] [Worker-Main-10/WARN] (Minecraft) Texture mythicalswords:block/obsidiana_ritual_ore with size 503x503 limits mip level from 2 to 0
+[18:25:29] [Worker-Main-10/WARN] (Minecraft) minecraft:textures/atlas/blocks.png: dropping miplevel from 4 to 0, because of minimum power of two: 1
+[18:25:33] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[18:25:33] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[18:25:33] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Altavoces (Realtek(R) Audio)
+[18:25:33] [Render thread/INFO] (Minecraft) Sound engine started
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 8192x8192x0 minecraft:textures/atlas/blocks.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[18:25:34] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[18:25:34] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[18:25:35] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[18:25:35] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[18:25:35] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[18:25:46] [Render thread/INFO] (Minecraft) Deleting level Mundo nuevo
+[18:25:46] [Render thread/INFO] (Minecraft) Attempt 1...
+[18:25:48] [Render thread/INFO] (Minecraft) Deleting level Mundo nuevo (1)
+[18:25:48] [Render thread/INFO] (Minecraft) Attempt 1...
+[18:25:50] [Render thread/INFO] (mythicalswords) Added Dragon Fang Fragment drop to Endermen (1%)
+[18:25:50] [Render thread/INFO] (mythicalswords) Added Dragon Fang Fragment drop to Ender Dragon (100%, 2-3 drops)
+[18:25:50] [Render thread/INFO] (mythicalswords) Added Rainbow Bridge Fragment drop to Wither Skeletons (2%)
+[18:25:50] [Render thread/INFO] (mythicalswords) Added Frozen Soul Crystal drop to Strays (5%)
+[18:25:50] [Render thread/INFO] (mythicalswords) Added Spiritbound Leather drop to Phantoms (8%)
+[18:25:50] [Render thread/INFO] (mythicalswords) Added Sun-Blessed Alloy drop to Blazes (10%)
+[18:25:50] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[18:25:51] [Render thread/ERROR] (Minecraft) Parsing error loading custom advancement mythicalswords:legendary_weapon: Unknown item id 'mythicalswords:caliburn'
+[18:25:51] [Render thread/ERROR] (Minecraft) Parsing error loading custom advancement mythicalswords:slay_god: Missing entity
+[18:25:51] [Render thread/INFO] (Minecraft) Loaded 1273 advancements
+[18:25:53] [Render thread/INFO] (mythicalswords) Added Dragon Fang Fragment drop to Endermen (1%)
+[18:25:53] [Render thread/INFO] (mythicalswords) Added Dragon Fang Fragment drop to Ender Dragon (100%, 2-3 drops)
+[18:25:53] [Render thread/INFO] (mythicalswords) Added Rainbow Bridge Fragment drop to Wither Skeletons (2%)
+[18:25:53] [Render thread/INFO] (mythicalswords) Added Frozen Soul Crystal drop to Strays (5%)
+[18:25:53] [Render thread/INFO] (mythicalswords) Added Spiritbound Leather drop to Phantoms (8%)
+[18:25:53] [Render thread/INFO] (mythicalswords) Added Sun-Blessed Alloy drop to Blazes (10%)
+[18:25:53] [Render thread/INFO] (Minecraft) Loaded 7 recipes
+[18:25:53] [Render thread/ERROR] (Minecraft) Parsing error loading custom advancement mythicalswords:legendary_weapon: Unknown item id 'mythicalswords:caliburn'
+[18:25:53] [Render thread/ERROR] (Minecraft) Parsing error loading custom advancement mythicalswords:slay_god: Missing entity
+[18:25:53] [Render thread/INFO] (Minecraft) Loaded 1273 advancements
+[18:25:58] [Render thread/INFO] (BiomeModificationImpl) Applied 318 biome modifications to 53 of 64 new biomes in 18.86 ms
+[18:25:58] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[18:25:58] [Server thread/INFO] (Minecraft) Generating keypair
+[18:26:01] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[18:26:02] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 0 %
+[18:26:02] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 0 %
+[18:26:03] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 0 %
+[18:26:03] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 0 %
+[18:26:03] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 1 %
+[18:26:04] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 2 %
+[18:26:04] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 3 %
+[18:26:05] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 5 %
+[18:26:05] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 6 %
+[18:26:06] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 9 %
+[18:26:06] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 12 %
+[18:26:07] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 15 %
+[18:26:07] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 18 %
+[18:26:08] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 22 %
+[18:26:08] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 24 %
+[18:26:09] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 28 %
+[18:26:09] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 31 %
+[18:26:10] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 33 %
+[18:26:10] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 36 %
+[18:26:11] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 39 %
+[18:26:11] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 43 %
+[18:26:12] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 45 %
+[18:26:12] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 50 %
+[18:26:13] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 54 %
+[18:26:13] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 57 %
+[18:26:14] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 60 %
+[18:26:14] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 64 %
+[18:26:15] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 68 %
+[18:26:15] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 72 %
+[18:26:16] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 75 %
+[18:26:16] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 78 %
+[18:26:17] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 83 %
+[18:26:17] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 84 %
+[18:26:18] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 87 %
+[18:26:18] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 92 %
+[18:26:19] [Render thread/INFO] (Minecraft) Preparando zona de aparici¾n: 96 %
+[18:26:19] [Render thread/INFO] (Minecraft) Time elapsed: 17900 ms
+[18:26:19] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[18:26:19] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[18:26:21] [Server thread/INFO] (Minecraft) Player366[local:E:b8f85413] logged in with entity id 222 at (4.5, 88.0, -1.5)
+[18:26:21] [Server thread/INFO] (Minecraft) Player366 se ha unido a la partida
+[18:26:22] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[18:26:23] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[18:26:23] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
+[18:26:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
+[18:26:24] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
+[18:26:37] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[18:26:37] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
+[18:26:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
+[18:26:38] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
+[18:27:02] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[18:27:02] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
+[18:27:02] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
+[18:27:02] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
+[18:28:01] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[18:28:01] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
+[18:28:01] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
+[18:28:01] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
+[18:28:29] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[18:28:29] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:overworld
+[18:28:29] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_nether
+[18:28:29] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[Mundo nuevo]'/minecraft:the_end
+[18:28:34] [Worker-Main-9/INFO] (mythicalswords) [Camelot] loaded 143 districts
+[18:28:35] [Server thread/ERROR] (Minecraft) Error executing task on Chunk source main thread executor for minecraft:overworld
+net.minecraft.util.crash.CrashException: Feature placement
+        at net.minecraft.server.world.ThreadedAnvilChunkStorage.method_39934(ThreadedAnvilChunkStorage.java:699) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.ThreadExecutor.executeTask(ThreadExecutor.java:156) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.world.ServerChunkManager$MainThreadExecutor.executeTask(ServerChunkManager.java:564) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.ThreadExecutor.runTask(ThreadExecutor.java:130) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.world.ServerChunkManager$MainThreadExecutor.runTask(ServerChunkManager.java:573) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.world.ServerChunkManager.executeQueuedTasks(ServerChunkManager.java:282) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.runOneTask(MinecraftServer.java:770) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.runTask(MinecraftServer.java:758) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.ThreadExecutor.runTasks(ThreadExecutor.java:139) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.runTasksTillTickEnd(MinecraftServer.java:743) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:675) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:265) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at java.lang.Thread.run(Thread.java:842) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraft.world.World.getServer()" because "this.world" is null
+        at net.minecraft.block.entity.LootableContainerBlockEntity.checkLootInteraction(LootableContainerBlockEntity.java:69) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.block.entity.LootableContainerBlockEntity.setStack(LootableContainerBlockEntity.java:123) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at com.mythicalswords.structures.AztecPyramidGenerator.placeLootChests(AztecPyramidGenerator.java:158) ~[main/:?]
+        at com.mythicalswords.structures.AztecPyramidGenerator.generate(AztecPyramidGenerator.java:28) ~[main/:?]
+        at com.mythicalswords.structures.StructureVariants.generate(StructureVariants.java:21) ~[main/:?]
+        at com.mythicalswords.structures.MythicalStructurePiece.generate(MythicalStructurePiece.java:61) ~[main/:?]
+        at net.minecraft.structure.StructureStart.place(StructureStart.java:100) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.gen.chunk.ChunkGenerator.method_38265(ChunkGenerator.java:320) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-31.1-jre.jar:?]
+        at net.minecraft.world.gen.chunk.ChunkGenerator.generateFeatures(ChunkGenerator.java:319) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.chunk.ChunkStatus.method_51375(ChunkStatus.java:108) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:309) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.chunk.ChunkStatus.runGenerationTask(ChunkStatus.java:252) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17225(ThreadedAnvilChunkStorage.java:684) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar:?]
+        at net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17224(ThreadedAnvilChunkStorage.java:673) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+        at net.minecraft.server.world.ChunkTaskPrioritySystem.method_17634(ChunkTaskPrioritySystem.java:62) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.TaskExecutor.runNext(TaskExecutor.java:91) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.TaskExecutor.runWhile(TaskExecutor.java:146) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.TaskExecutor.run(TaskExecutor.java:102) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395) ~[?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[18:28:37] [Server thread/ERROR] (Minecraft) Encountered an unexpected exception
+net.minecraft.util.crash.CrashException: Feature placement
+        at net.minecraft.server.MinecraftServer.tickWorlds(MinecraftServer.java:901) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:824) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:105) ~[minecraft-clientOnly-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:671) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:265) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at java.lang.Thread.run(Thread.java:842) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraft.world.World.getServer()" because "this.world" is null
+        at net.minecraft.block.entity.LootableContainerBlockEntity.checkLootInteraction(LootableContainerBlockEntity.java:69) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.block.entity.LootableContainerBlockEntity.setStack(LootableContainerBlockEntity.java:123) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at com.mythicalswords.structures.AztecPyramidGenerator.placeLootChests(AztecPyramidGenerator.java:158) ~[main/:?]
+        at com.mythicalswords.structures.AztecPyramidGenerator.generate(AztecPyramidGenerator.java:28) ~[main/:?]
+        at com.mythicalswords.structures.StructureVariants.generate(StructureVariants.java:21) ~[main/:?]
+        at com.mythicalswords.structures.MythicalStructurePiece.generate(MythicalStructurePiece.java:61) ~[main/:?]
+        at net.minecraft.structure.StructureStart.place(StructureStart.java:100) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.gen.chunk.ChunkGenerator.method_38265(ChunkGenerator.java:320) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422) ~[guava-31.1-jre.jar:?]
+        at net.minecraft.world.gen.chunk.ChunkGenerator.generateFeatures(ChunkGenerator.java:319) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.chunk.ChunkStatus.method_51375(ChunkStatus.java:108) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:309) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.world.chunk.ChunkStatus.runGenerationTask(ChunkStatus.java:252) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17225(ThreadedAnvilChunkStorage.java:684) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at com.mojang.datafixers.util.Either$Left.map(Either.java:38) ~[datafixerupper-6.0.8.jar:?]
+        at net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17224(ThreadedAnvilChunkStorage.java:673) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150) ~[?:?]
+        at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?]
+        at net.minecraft.server.world.ChunkTaskPrioritySystem.method_17634(ChunkTaskPrioritySystem.java:62) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.TaskExecutor.runNext(TaskExecutor.java:91) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.TaskExecutor.runWhile(TaskExecutor.java:146) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at net.minecraft.util.thread.TaskExecutor.run(TaskExecutor.java:102) ~[minecraft-common-7787b014d4-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar:?]
+        at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395) ~[?:?]
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373) ~[?:?]
+        at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
+[18:28:37] [Server thread/ERROR] (Minecraft) This crash report has been saved to: C:\Users\alfredo\Desktop\mod\mod-minecraft\mythical-swords-template-1.20.1\run\crash-reports\crash-2026-06-12_18.28.37-server.txt
+[18:28:37] [Server thread/INFO] (Minecraft) Stopping server
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 2026-06-12 18:28:37
+Description: Feature placement
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.world.World.getServer()" because "this.world" is null
+        at knot//net.minecraft.block.entity.LootableContainerBlockEntity.checkLootInteraction(LootableContainerBlockEntity.java:69)
+        at knot//net.minecraft.block.entity.LootableContainerBlockEntity.setStack(LootableContainerBlockEntity.java:123)
+        at knot//com.mythicalswords.structures.AztecPyramidGenerator.placeLootChests(AztecPyramidGenerator.java:158)
+        at knot//com.mythicalswords.structures.AztecPyramidGenerator.generate(AztecPyramidGenerator.java:28)
+        at knot//com.mythicalswords.structures.StructureVariants.generate(StructureVariants.java:21)
+        at knot//com.mythicalswords.structures.MythicalStructurePiece.generate(MythicalStructurePiece.java:61)
+        at knot//net.minecraft.structure.StructureStart.place(StructureStart.java:100)
+        at knot//net.minecraft.world.gen.chunk.ChunkGenerator.method_38265(ChunkGenerator.java:320)
+        at knot//com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422)
+        at knot//net.minecraft.world.gen.chunk.ChunkGenerator.generateFeatures(ChunkGenerator.java:319)
+        at knot//net.minecraft.world.chunk.ChunkStatus.method_51375(ChunkStatus.java:108)
+        at knot//net.minecraft.world.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:309)
+        at knot//net.minecraft.world.chunk.ChunkStatus.runGenerationTask(ChunkStatus.java:252)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17225(ThreadedAnvilChunkStorage.java:684)
+        at knot//com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17224(ThreadedAnvilChunkStorage.java:673)
+        at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+        at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+        at knot//net.minecraft.server.world.ChunkTaskPrioritySystem.method_17634(ChunkTaskPrioritySystem.java:62)
+        at knot//net.minecraft.util.thread.TaskExecutor.runNext(TaskExecutor.java:91)
+        at knot//net.minecraft.util.thread.TaskExecutor.runWhile(TaskExecutor.java:146)
+        at knot//net.minecraft.util.thread.TaskExecutor.run(TaskExecutor.java:102)
+        at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+        at knot//net.minecraft.block.entity.LootableContainerBlockEntity.checkLootInteraction(LootableContainerBlockEntity.java:69)
+        at knot//net.minecraft.block.entity.LootableContainerBlockEntity.setStack(LootableContainerBlockEntity.java:123)
+        at knot//com.mythicalswords.structures.AztecPyramidGenerator.placeLootChests(AztecPyramidGenerator.java:158)
+        at knot//com.mythicalswords.structures.AztecPyramidGenerator.generate(AztecPyramidGenerator.java:28)
+        at knot//com.mythicalswords.structures.StructureVariants.generate(StructureVariants.java:21)
+        at knot//com.mythicalswords.structures.MythicalStructurePiece.generate(MythicalStructurePiece.java:61)
+        at knot//net.minecraft.structure.StructureStart.place(StructureStart.java:100)
+        at knot//net.minecraft.world.gen.chunk.ChunkGenerator.method_38265(ChunkGenerator.java:320)
+        at knot//com.google.common.collect.ImmutableList.forEach(ImmutableList.java:422)
+        at knot//net.minecraft.world.gen.chunk.ChunkGenerator.generateFeatures(ChunkGenerator.java:319)
+        at knot//net.minecraft.world.chunk.ChunkStatus.method_51375(ChunkStatus.java:108)
+        at knot//net.minecraft.world.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:309)
+        at knot//net.minecraft.world.chunk.ChunkStatus.runGenerationTask(ChunkStatus.java:252)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17225(ThreadedAnvilChunkStorage.java:684)
+        at knot//com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17224(ThreadedAnvilChunkStorage.java:673)
+        at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+        at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+        at knot//net.minecraft.server.world.ChunkTaskPrioritySystem.method_17634(ChunkTaskPrioritySystem.java:62)
+        at knot//net.minecraft.util.thread.TaskExecutor.runNext(TaskExecutor.java:91)
+        at knot//net.minecraft.util.thread.TaskExecutor.runWhile(TaskExecutor.java:146)
+        at knot//net.minecraft.util.thread.TaskExecutor.run(TaskExecutor.java:102)
+
+-- Feature --
+Details:
+        Description: ResourceKey[minecraft:worldgen/structure / mythicalswords:aztec]
+Stacktrace:
+        at knot//net.minecraft.world.gen.chunk.ChunkGenerator.generateFeatures(ChunkGenerator.java:319)
+        at knot//net.minecraft.world.chunk.ChunkStatus.method_51375(ChunkStatus.java:108)
+        at knot//net.minecraft.world.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:309)
+        at knot//net.minecraft.world.chunk.ChunkStatus.runGenerationTask(ChunkStatus.java:252)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17225(ThreadedAnvilChunkStorage.java:684)
+        at knot//com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17224(ThreadedAnvilChunkStorage.java:673)
+        at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+        at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+        at knot//net.minecraft.server.world.ChunkTaskPrioritySystem.method_17634(ChunkTaskPrioritySystem.java:62)
+        at knot//net.minecraft.util.thread.TaskExecutor.runNext(TaskExecutor.java:91)
+        at knot//net.minecraft.util.thread.TaskExecutor.runWhile(TaskExecutor.java:146)
+        at knot//net.minecraft.util.thread.TaskExecutor.run(TaskExecutor.java:102)
+        at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+-- Generation --
+Details:
+        CenterX: 51
+        CenterZ: 60
+        Seed: -4507897309028025701
+Stacktrace:
+        at knot//net.minecraft.world.gen.chunk.ChunkGenerator.generateFeatures(ChunkGenerator.java:319)
+        at knot//net.minecraft.world.chunk.ChunkStatus.method_51375(ChunkStatus.java:108)
+        at knot//net.minecraft.world.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:309)
+        at knot//net.minecraft.world.chunk.ChunkStatus.runGenerationTask(ChunkStatus.java:252)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17225(ThreadedAnvilChunkStorage.java:684)
+        at knot//com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17224(ThreadedAnvilChunkStorage.java:673)
+        at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+        at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+        at knot//net.minecraft.server.world.ChunkTaskPrioritySystem.method_17634(ChunkTaskPrioritySystem.java:62)
+        at knot//net.minecraft.util.thread.TaskExecutor.runNext(TaskExecutor.java:91)
+        at knot//net.minecraft.util.thread.TaskExecutor.runWhile(TaskExecutor.java:146)
+        at knot//net.minecraft.util.thread.TaskExecutor.run(TaskExecutor.java:102)
+        at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+-- Chunk to be generated --
+Details:
+        Location: 51,60
+        Position hash: 257698037811
+        Generator: net.minecraft.world.gen.chunk.NoiseChunkGenerator@206505be
+Stacktrace:
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17225(ThreadedAnvilChunkStorage.java:684)
+        at knot//com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+        at knot//net.minecraft.server.world.ThreadedAnvilChunkStorage.method_17224(ThreadedAnvilChunkStorage.java:673)
+        at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+        at java.base/java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482)
+        at knot//net.minecraft.server.world.ChunkTaskPrioritySystem.method_17634(ChunkTaskPrioritySystem.java:62)
+        at knot//net.minecraft.util.thread.TaskExecutor.runNext(TaskExecutor.java:91)
+        at knot//net.minecraft.util.thread.TaskExecutor.runWhile(TaskExecutor.java:146)
+        at knot//net.minecraft.util.thread.TaskExecutor.run(TaskExecutor.java:102)
+        at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1395)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+-- Affected level --
+Details:
+        All players: 1 total; [ServerPlayerEntity['Player366'/222, l='ServerLevel[Mundo nuevo]', x=576.78, y=106.11, z=725.04]]
+        Chunk stats: 4948
+        Level dimension: minecraft:overworld
+        Level spawn location: World: (0,75,0), Section: (at 0,11,0 in 0,4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+        Level time: 1258 game time, 1258 day time
+        Level name: Mundo nuevo
+        Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+        Level weather: Rain time: 150459 (now: false), thunder time: 141849 (now: false)
+        Known server brands: fabric
+        Removed feature flags: 
+        Level was modded: true
+        Level storage version: 0x04ABD - Anvil
+Stacktrace:
+        at knot//net.minecraft.server.MinecraftServer.tickWorlds(MinecraftServer.java:900)
+        at knot//net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:824)
+        at knot//net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:105)
+        at knot//net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:671)
+        at knot//net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:265)
+        at java.base/java.lang.Thread.run(Thread.java:842)
+
+-- System Details --
+Details:
+        Minecraft Version: 1.20.1
+        Minecraft Version ID: 1.20.1
+        Operating System: Windows 11 (amd64) version 10.0
+        Java Version: 17.0.12, Oracle Corporation
+        Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+        Memory: 1073423768 bytes (1023 MiB) / 3118465024 bytes (2974 MiB) up to 4261412864 bytes (4064 MiB)
+        CPUs: 12
+        Processor Vendor: AuthenticAMD
+        Processor Name: AMD Ryzen 5 5600G with Radeon Graphics         
+        Identifier: AuthenticAMD Family 25 Model 80 Stepping 0
+        Microarchitecture: Zen 3
+        Frequency (GHz): 3.89
+        Number of physical packages: 1
+        Number of physical CPUs: 6
+        Number of logical CPUs: 12
+        Graphics card #0 name: NVIDIA GeForce GTX 1660 SUPER
+        Graphics card #0 vendor: NVIDIA (0x10de)
+        Graphics card #0 VRAM (MB): 4095.00
+        Graphics card #0 deviceId: 0x21c4
+        Graphics card #0 versionInfo: DriverVersion=32.0.16.1047
+        Memory slot #0 capacity (MB): 8192.00
+        Memory slot #0 clockSpeed (GHz): 3.20
+        Memory slot #0 type: DDR4
+        Memory slot #1 capacity (MB): 8192.00
+        Memory slot #1 clockSpeed (GHz): 3.20
+        Memory slot #1 type: DDR4
+        Virtual memory max (MB): 39872.44
+        Virtual memory used (MB): 39245.39
+        Swap memory total (MB): 23622.52
+        Swap memory used (MB): 6359.10
+        JVM Flags: 0 total; 
+        Fabric Mods: 
+                fabric-api: Fabric API 0.92.6+1.20.1
+                fabric-api-base: Fabric API Base 0.4.32+1802ada577
+                fabric-api-lookup-api-v1: Fabric API Lookup API (v1) 1.6.37+1802ada577
+                fabric-biome-api-v1: Fabric Biome API (v1) 13.0.14+1802ada577
+                fabric-block-api-v1: Fabric Block API (v1) 1.0.12+1802ada577
+                fabric-block-view-api-v2: Fabric BlockView API (v2) 1.0.3+924f046a77
+                fabric-blockrenderlayer-v1: Fabric BlockRenderLayer Registration (v1) 1.1.42+1802ada577
+                fabric-client-tags-api-v1: Fabric Client Tags 1.1.3+1802ada577
+                fabric-command-api-v1: Fabric Command API (v1) 1.2.35+f71b366f77
+                fabric-command-api-v2: Fabric Command API (v2) 2.2.14+1802ada577
+                fabric-commands-v0: Fabric Commands (v0) 0.2.52+df3654b377
+                fabric-containers-v0: Fabric Containers (v0) 0.1.67+df3654b377
+                fabric-content-registries-v0: Fabric Content Registries (v0) 4.0.13+1802ada577
+                fabric-convention-tags-v1: Fabric Convention Tags 1.5.6+1802ada577
+                fabric-crash-report-info-v1: Fabric Crash Report Info (v1) 0.2.20+1802ada577
+                fabric-data-attachment-api-v1: Fabric Data Attachment API (v1) 1.0.2+de0fd6d177
+                fabric-data-generation-api-v1: Fabric Data Generation API (v1) 12.3.7+1802ada577
+                fabric-dimensions-v1: Fabric Dimensions API (v1) 2.1.55+1802ada577
+                fabric-entity-events-v1: Fabric Entity Events (v1) 1.6.1+1c78457f77
+                fabric-events-interaction-v0: Fabric Events Interaction (v0) 0.6.5+13a40c6677
+                fabric-events-lifecycle-v0: Fabric Events Lifecycle (v0) 0.2.64+df3654b377
+                fabric-game-rule-api-v1: Fabric Game Rule API (v1) 1.0.41+1802ada577
+                fabric-gametest-api-v1: Fabric Game Test API (v1) 1.2.15+1802ada577
+                fabric-item-api-v1: Fabric Item API (v1) 2.1.29+1802ada577
+                fabric-item-group-api-v1: Fabric Item Group API (v1) 4.0.14+1802ada577
+                fabric-key-binding-api-v1: Fabric Key Binding API (v1) 1.0.38+1802ada577
+                fabric-keybindings-v0: Fabric Key Bindings (v0) 0.2.36+df3654b377
+                fabric-lifecycle-events-v1: Fabric Lifecycle Events (v1) 2.2.23+1802ada577
+                fabric-loot-api-v2: Fabric Loot API (v2) 1.2.3+1802ada577
+                fabric-loot-tables-v1: Fabric Loot Tables (v1) 1.1.47+9e7660c677
+                fabric-message-api-v1: Fabric Message API (v1) 5.1.10+1802ada577
+                fabric-mining-level-api-v1: Fabric Mining Level API (v1) 2.1.52+1802ada577
+                fabric-model-loading-api-v1: Fabric Model Loading API (v1) 1.0.4+1802ada577
+                fabric-models-v0: Fabric Models (v0) 0.4.3+9386d8a777
+                fabric-networking-api-v1: Fabric Networking API (v1) 1.3.14+a158aa0477
+                fabric-networking-v0: Fabric Networking (v0) 0.3.54+df3654b377
+                fabric-object-builder-api-v1: Fabric Object Builder API (v1) 11.1.5+e35120df77
+                fabric-particles-v1: Fabric Particles (v1) 1.1.3+1802ada577
+                fabric-recipe-api-v1: Fabric Recipe API (v1) 1.0.24+1802ada577
+                fabric-registry-sync-v0: Fabric Registry Sync (v0) 2.3.6+1802ada577
+                fabric-renderer-api-v1: Fabric Renderer API (v1) 3.2.2+1802ada577
+                fabric-renderer-indigo: Fabric Renderer - Indigo 1.5.3+85287f9f77
+                fabric-renderer-registries-v1: Fabric Renderer Registries (v1) 3.2.47+df3654b377
+                fabric-rendering-data-attachment-v1: Fabric Rendering Data Attachment (v1) 0.3.39+92a0d36777
+                fabric-rendering-fluids-v1: Fabric Rendering Fluids (v1) 3.0.29+1802ada577
+                fabric-rendering-v0: Fabric Rendering (v0) 1.1.50+df3654b377
+                fabric-rendering-v1: Fabric Rendering (v1) 3.0.9+1802ada577
+                fabric-resource-conditions-api-v1: Fabric Resource Conditions API (v1) 2.3.9+1802ada577
+                fabric-resource-loader-v0: Fabric Resource Loader (v0) 0.11.12+fb82e9d777
+                fabric-screen-api-v1: Fabric Screen API (v1) 2.0.9+1802ada577
+                fabric-screen-handler-api-v1: Fabric Screen Handler API (v1) 1.3.33+1802ada577
+                fabric-sound-api-v1: Fabric Sound API (v1) 1.0.14+1802ada577
+                fabric-transfer-api-v1: Fabric Transfer API (v1) 3.3.6+8dd72ea377
+                fabric-transitive-access-wideners-v1: Fabric Transitive Access Wideners (v1) 4.3.2+1802ada577
+                fabricloader: Fabric Loader 0.18.1
+                java: Java HotSpot(TM) 64-Bit Server VM 17
+                minecraft: Minecraft 1.20.1
+                mixinextras: MixinExtras 0.5.0
+                mythicalswords: Mythical Swords Mod 0.4.0-alpha
+        Server Running: true
+        Player Count: 1 / 8; [ServerPlayerEntity['Player366'/222, l='ServerLevel[Mundo nuevo]', x=576.78, y=106.11, z=725.04]]
+        Data Packs: vanilla, fabric
+        Enabled Feature Flags: minecraft:vanilla
+        World Generation: Stable
+        Type: Integrated Server (map_client.txt)
+        Is Modded: Definitely; Client brand changed to 'fabric'; Server brand changed to 'fabric'
+        Launched Version: Fabric
+[18:28:37] [Server thread/INFO] (Minecraft) Saving players
+#@!@# Game crashed! Crash report saved to: #@!@# C:\Users\alfredo\Desktop\mod\mod-minecraft\mythical-swords-template-1.20.1\run\crash-reports\crash-2026-06-12_18.28.37-server.txt
+
+> Task :runClient FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':runClient'.
+> Process 'command 'C:\Program Files\Java\jdk-17\bin\java.exe'' finished with non-zero exit value -1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 3m 35s
+9 actionable tasks: 3 executed, 6 up-to-date

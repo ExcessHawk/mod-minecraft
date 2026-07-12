@@ -1,0 +1,232 @@
+# JSONs para el Mod Mythical Swords
+(Contenido agrupado en un solo archivo .txt)
+
+--- ITEMS MODELS ---
+
+## harpe.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/harpe" }
+}
+
+## xiphos_sagrado.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/xiphos_sagrado" }
+}
+
+## gram.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/gram" }
+}
+
+## skofnung.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/skofnung" }
+}
+
+## macuahuitl.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/macuahuitl" }
+}
+
+## naginata_bishamon.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/naginata_bishamon" }
+}
+
+## masamune.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/masamune" }
+}
+
+## hoja_8_inmortales.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/hoja_8_inmortales" }
+}
+
+## lanza_sobek.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/lanza_sobek" }
+}
+
+## daga_escorpion.json
+{
+  "parent": "item/handheld",
+  "textures": { "layer0": "mythicalswords:item/daga_escorpion" }
+}
+
+--- RECIPES ---
+
+## harpe.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" SG", " MS", "M  "],
+  "key": {
+    "S": { "item": "mythicalswords:shard_of_divinity" },
+    "G": { "item": "mythicalswords:gorgons_eye" },
+    "M": { "item": "mythicalswords:mythril_ingot" }
+  },
+  "result": { "item": "mythicalswords:harpe", "count": 1 }
+}
+
+## xiphos_sagrado.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" DS", " DS", " LG"],
+  "key": {
+    "D": { "item": "mythicalswords:blessed_steel_ingot" },
+    "S": { "item": "mythicalswords:feather_of_victory" },
+    "L": { "item": "mythicalswords:leather_grip" },
+    "G": { "item": "minecraft:gold_ingot" }
+  },
+  "result": { "item": "mythicalswords:xiphos_sagrado", "count": 1 }
+}
+
+## gram.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" TT", " TT", " SW"],
+  "key": {
+    "T": { "item": "mythicalswords:tyrfing_steel" },
+    "S": { "item": "mythicalswords:stone_of_destiny_fragment" },
+    "W": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "mythicalswords:gram", "count": 1 }
+}
+
+## skofnung.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" OO", " OO", " SW"],
+  "key": {
+    "O": { "item": "mythicalswords:old_king_steel" },
+    "S": { "item": "minecraft:lapis_lazuli" },
+    "W": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "mythicalswords:skofnung", "count": 1 }
+}
+
+## macuahuitl.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["OOO", "WWW", " W "],
+  "key": {
+    "O": { "item": "mythicalswords:obsidian_shard" },
+    "W": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "mythicalswords:macuahuitl", "count": 1 }
+}
+
+## naginata_bishamon.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  S", " B ", "W  "],
+  "key": {
+    "S": { "item": "mythicalswords:bishamon_steel" },
+    "B": { "item": "mythicalswords:gem_of_bishamon" },
+    "W": { "item": "mythicalswords:long_oak_handle" }
+  },
+  "result": { "item": "mythicalswords:naginata_bishamon", "count": 1 }
+}
+
+## masamune.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" DDS", " DDS", "  HW"],
+  "key": {
+    "D": { "item": "mythicalswords:tamahagane_ingot" },
+    "S": { "item": "mythicalswords:soul_of_the_swordsmith" },
+    "H": { "item": "minecraft:string" },
+    "W": { "item": "mythicalswords:japanese_handle" }
+  },
+  "result": { "item": "mythicalswords:masamune", "count": 1 }
+}
+
+## hoja_8_inmortales.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" LL", " LL", " WD"],
+  "key": {
+    "L": { "item": "mythicalswords:dust_of_longevity" },
+    "W": { "item": "mythicalswords:ritual_wood" },
+    "D": { "item": "minecraft:diamond" }
+  },
+  "result": { "item": "mythicalswords:hoja_8_inmortales", "count": 1 }
+}
+
+## lanza_sobek.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["  T", " S ", "W  "],
+  "key": {
+    "T": { "item": "mythicalswords:tooth_of_sobek" },
+    "S": { "item": "mythicalswords:sandstone_ingot" },
+    "W": { "item": "mythicalswords:long_staff" }
+  },
+  "result": { "item": "mythicalswords:lanza_sobek", "count": 1 }
+}
+
+## daga_escorpion.json
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["S", "B", "W"],
+  "key": {
+    "S": { "item": "mythicalswords:scorpion_tail" },
+    "B": { "item": "minecraft:bone" },
+    "W": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "mythicalswords:daga_escorpion", "count": 1 }
+}
+
+
+--- WORLDGEN ORE EXAMPLE ---
+
+## mythril_ore.json
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 6,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": "minecraft:stone",
+        "state": { "Name": "mythicalswords:mythril_ore" }
+      }
+    ]
+  }
+}
+
+--- LOOT TABLE EXAMPLE ---
+
+## sobek_drop.json
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "minecraft:item", "name": "mythicalswords:lanza_sobek" }
+      ]
+    }
+  ]
+}
+
+--- ENCHANT EXAMPLE ---
+
+## elemental_edge.json
+{
+  "rarity": "rare",
+  "weight": 10,
+  "max_level": 3,
+  "curse": false,
+  "treasure": true,
+  "targets": ["mythical_weapon"]
+}
