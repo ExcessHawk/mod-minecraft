@@ -181,6 +181,9 @@ public class OdinEntity extends MythicalBossEntity implements GeoEntity {
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllers) {
         controllers.add(new AnimationController<>(this, "controller", 0, state -> state.setAndContinue(ODIN_IDLE)));
+        controllers.add(new AnimationController<>(this, "attack", 0, state -> software.bernie.geckolib.core.object.PlayState.STOP)
+            .triggerableAnim("melee", RawAnimation.begin().thenPlay("attack_melee"))
+            .triggerableAnim("special", RawAnimation.begin().thenPlay("attack_special")));
     }
 
     @Override

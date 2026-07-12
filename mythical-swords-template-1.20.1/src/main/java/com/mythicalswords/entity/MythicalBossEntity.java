@@ -2,6 +2,7 @@ package com.mythicalswords.entity;
 
 import com.mythicalswords.core.ModSounds;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.boss.BossBar;
 import net.minecraft.entity.boss.ServerBossBar;
 import net.minecraft.entity.mob.HostileEntity;
@@ -23,6 +24,11 @@ public abstract class MythicalBossEntity extends HostileEntity {
     // Cleanup: remove dead boss entity after 5 minutes (6000 ticks)
     private static final int DEATH_CLEANUP_TICKS = 6000;
     private int deathTimer = -1;
+
+    // Telegraphed heavy attack (Combat 2.0): grace period on spawn, then the
+    // boss winds up (particle ring, dodgeable) and slams an AoE around itself
+    private int heavyCooldown = 100;
+    private int telegraphTicks = 0;
 
     public MythicalBossEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
@@ -68,6 +74,103 @@ public abstract class MythicalBossEntity extends HostileEntity {
         float healthPercent = this.getHealth() / this.getMaxHealth();
         this.bossBar.setPercent(healthPercent);
         checkPhaseTransition(healthPercent);
+        tickHeavyAttack();
+    }
+
+    // ===== Telegraphed heavy attack =====
+
+    /** Radius of the AoE slam (and of the warning ring). */
+    protected double heavyAttackRange() { return 5.0; }
+
+    /** Wind-up in ticks — the dodge window. Shorter when enraged. */
+    protected int heavyAttackTelegraph() { return currentPhase >= 3 ? 14 : 20; }
+
+    /** Ticks between heavy attacks. Faster when enraged. */
+    protected int heavyAttackCooldownTicks() { return currentPhase >= 3 ? 100 : 160; }
+
+    /** Heavy attack damage = attack damage attribute times this. */
+    protected float heavyAttackDamageMultiplier() { return 1.5f; }
+
+    private void tickHeavyAttack() {
+        if (this.getWorld().isClient) return;
+
+        if (telegraphTicks > 0) {
+            // Wind-up: hold position and show the warning ring
+            this.getNavigation().stop();
+            telegraphTicks--;
+            if (this.getWorld() instanceof ServerWorld sw && telegraphTicks % 2 == 0) {
+                spawnTelegraphRing(sw);
+            }
+            if (telegraphTicks == 0) {
+                executeHeavyAttack();
+                heavyCooldown = heavyAttackCooldownTicks();
+            }
+            return;
+        }
+
+        if (heavyCooldown > 0) {
+            heavyCooldown--;
+            return;
+        }
+
+        LivingEntity target = this.getTarget();
+        if (target != null && target.isAlive() && this.canSee(target)
+                && this.squaredDistanceTo(target) <= heavyAttackRange() * heavyAttackRange()) {
+            telegraphTicks = heavyAttackTelegraph();
+            triggerAttackAnim("special");
+            this.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(),
+                net.minecraft.sound.SoundEvents.ENTITY_RAVAGER_ROAR, SoundCategory.HOSTILE, 1.2f, 0.8f);
+        }
+    }
+
+    private void spawnTelegraphRing(ServerWorld world) {
+        double radius = heavyAttackRange();
+        for (int i = 0; i < 16; i++) {
+            double angle = (Math.PI * 2 / 16) * i;
+            world.spawnParticles(ParticleTypes.FLAME,
+                this.getX() + Math.cos(angle) * radius, this.getY() + 0.15,
+                this.getZ() + Math.sin(angle) * radius,
+                1, 0.05, 0.02, 0.05, 0.0);
+        }
+    }
+
+    /** AoE slam around the boss. Override for themed heavy attacks. */
+    protected void executeHeavyAttack() {
+        if (!(this.getWorld() instanceof ServerWorld world)) return;
+        double radius = heavyAttackRange();
+        float damage = (float) this.getAttributeValue(
+                net.minecraft.entity.attribute.EntityAttributes.GENERIC_ATTACK_DAMAGE)
+                * heavyAttackDamageMultiplier();
+
+        world.spawnParticles(ParticleTypes.EXPLOSION,
+                this.getX(), this.getY() + 0.5, this.getZ(), 4, radius / 3, 0.3, radius / 3, 0.0);
+        this.getWorld().playSound(null, this.getX(), this.getY(), this.getZ(),
+                net.minecraft.sound.SoundEvents.ENTITY_GENERIC_EXPLODE, SoundCategory.HOSTILE, 1.0f, 0.9f);
+
+        for (net.minecraft.entity.player.PlayerEntity player : world.getPlayers()) {
+            if (player.isAlive() && !player.isCreative() && !player.isSpectator()
+                    && player.squaredDistanceTo(this) <= radius * radius) {
+                player.damage(this.getDamageSources().mobAttack(this), damage);
+                net.minecraft.util.math.Vec3d push = player.getPos().subtract(this.getPos())
+                        .normalize().multiply(1.2).add(0, 0.5, 0);
+                player.addVelocity(push.x, push.y, push.z);
+                player.velocityModified = true;
+            }
+        }
+    }
+
+    /** Fires a triggerable animation on the "attack" controller if present. */
+    protected void triggerAttackAnim(String name) {
+        if (this instanceof software.bernie.geckolib.animatable.GeoEntity geo) {
+            geo.triggerAnim("attack", name);
+        }
+    }
+
+    @Override
+    public boolean tryAttack(net.minecraft.entity.Entity target) {
+        boolean hit = super.tryAttack(target);
+        if (hit) triggerAttackAnim("melee");
+        return hit;
     }
 
     @Override
