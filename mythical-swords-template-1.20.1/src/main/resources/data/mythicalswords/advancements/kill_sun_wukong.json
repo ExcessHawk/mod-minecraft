@@ -1,0 +1,22 @@
+{
+  "parent": "mythicalswords:slay_god",
+  "display": {
+    "icon": { "item": "mythicalswords:ruyi_jingu_bang" },
+    "title": { "translate": "advancements.mythicalswords.kill_sun_wukong.title" },
+    "description": { "translate": "advancements.mythicalswords.kill_sun_wukong.description" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "killed": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "mythicalswords:sun_wukong" } }
+        ]
+      }
+    }
+  },
+  "rewards": { "experience": 130 }
+}

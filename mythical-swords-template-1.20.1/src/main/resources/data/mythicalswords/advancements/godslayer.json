@@ -1,0 +1,211 @@
+{
+  "parent": "mythicalswords:kill_rey_arturo",
+  "display": {
+    "icon": {
+      "item": "mythicalswords:shard_of_divinity"
+    },
+    "title": {
+      "translate": "advancements.mythicalswords.godslayer.title"
+    },
+    "description": {
+      "translate": "advancements.mythicalswords.godslayer.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "killed_rey_arturo": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:rey_arturo"
+            }
+          }
+        ]
+      }
+    },
+    "killed_odin": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:odin"
+            }
+          }
+        ]
+      }
+    },
+    "killed_loki": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:loki"
+            }
+          }
+        ]
+      }
+    },
+    "killed_atenea": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:atenea"
+            }
+          }
+        ]
+      }
+    },
+    "killed_susanoo": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:susanoo"
+            }
+          }
+        ]
+      }
+    },
+    "killed_oni_oscuro": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:oni_oscuro"
+            }
+          }
+        ]
+      }
+    },
+    "killed_izanagi": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:izanagi"
+            }
+          }
+        ]
+      }
+    },
+    "killed_quetzalcoatl": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:quetzalcoatl"
+            }
+          }
+        ]
+      }
+    },
+    "killed_anubis": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:anubis"
+            }
+          }
+        ]
+      }
+    },
+    "killed_ra": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:ra"
+            }
+          }
+        ]
+      }
+    },
+    "killed_sun_wukong": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "mythicalswords:sun_wukong"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_rey_arturo"
+    ],
+    [
+      "killed_odin"
+    ],
+    [
+      "killed_loki"
+    ],
+    [
+      "killed_atenea"
+    ],
+    [
+      "killed_susanoo"
+    ],
+    [
+      "killed_oni_oscuro"
+    ],
+    [
+      "killed_izanagi"
+    ],
+    [
+      "killed_quetzalcoatl"
+    ],
+    [
+      "killed_anubis"
+    ],
+    [
+      "killed_ra"
+    ],
+    [
+      "killed_sun_wukong"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

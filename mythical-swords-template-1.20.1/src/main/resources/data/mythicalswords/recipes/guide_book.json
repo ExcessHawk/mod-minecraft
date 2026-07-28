@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "item": "mythicalswords:mythril_ingot" }
+  ],
+  "result": { "item": "mythicalswords:guide_book", "count": 1 }
+}

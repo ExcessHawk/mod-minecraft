@@ -292,6 +292,10 @@ public class ModItems {
         public static final Item BLACKSMITH_HAMMER = registerItem("blacksmith_hammer",
                         new Item(new FabricItemSettings().maxCount(1)));
 
+        // In-game guide book (opens GuideScreen)
+        public static final Item GUIDE_BOOK = registerItem("guide_book",
+                        new com.mythicalswords.item.custom.GuideBookItem(new FabricItemSettings().maxCount(1)));
+
         public static final Item LOVERS_BOND_TOKEN = registerItem("lovers_bond_token",
                         new LoversBondTokenItem());
 
@@ -528,6 +532,7 @@ public class ModItems {
                         content.add(ModBlocks.MYTHICAL_FORGE);
                         content.add(ModBlocks.BOSS_ALTAR);
                         content.add(BLACKSMITH_HAMMER);
+                        content.add(GUIDE_BOOK);
 
                         // Compasses
                         content.add(CAMELOT_COMPASS);

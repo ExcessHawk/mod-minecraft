@@ -1,0 +1,18 @@
+{
+  "parent": "mythicalswords:godslayer",
+  "display": {
+    "icon": { "item": "mythicalswords:celestial_ingot" },
+    "title": { "translate": "advancements.mythicalswords.celestial_forger.title" },
+    "description": { "translate": "advancements.mythicalswords.celestial_forger.description" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "get_celestial": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [ { "items": [ "mythicalswords:celestial_ingot" ] } ] }
+    }
+  },
+  "rewards": { "experience": 200 }
+}

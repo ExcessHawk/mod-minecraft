@@ -1,0 +1,22 @@
+{
+  "parent": "mythicalswords:slay_god",
+  "display": {
+    "icon": { "item": "mythicalswords:blacksmith_hammer" },
+    "title": { "translate": "advancements.mythicalswords.kill_legendary_blacksmith.title" },
+    "description": { "translate": "advancements.mythicalswords.kill_legendary_blacksmith.description" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "killed": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "mythicalswords:legendary_blacksmith" } }
+        ]
+      }
+    }
+  },
+  "rewards": { "experience": 60 }
+}
