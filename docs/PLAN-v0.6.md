@@ -67,9 +67,11 @@ Base ya existe: `MythicalBossEntity` con 3 fases (100%→60%→30%).
 
 ## Fase 4 — Progresión (mediana)
 
-- [ ] Árbol de advancements: root → rama por mitología (encontrar estructura → matar boss) → "Matadioses" (los 11) → "Forjador Celestial" (lingote) → apunta a dimensión
-- [ ] Recompensas: XP + materiales rúnicos por advancement de boss
-- [ ] Libro guía in-game (item + pantalla custom simple): forja y sus 4 operaciones, tabla de runas, mapa de menas por bioma, bosses y sus brújulas
+- [x] Árbol de advancements (✅ 2026-07-12): root → legendary_weapon → slay_god → 12 advancements `kill_<boss>` (uno por jefe, icono = su arma, frame goal) → **Matadioses** (challenge, exige los 11 dioses) → **Forjador Celestial** (lingote celestial). 14 advancements nuevos, 18 en total
+- [x] Recompensas: XP por advancement (60-130 por jefe, 500 Matadioses, 200 Forjador Celestial)
+- [x] Libro guía in-game: item `guide_book` (receta: libro + lingote de mythril), `GuideBookItem` abre `GuideScreen` — 7 páginas paginadas con < >; contenido 100% en lang (`guide.mythicalswords.page.N.title/.body`, `\n` = salto de línea) así que agregar página = agregar keys + subir PAGE_COUNT
+- [x] Páginas: bienvenida, menas por bioma (mapa completo), la Forja y sus 4 operaciones, tabla de las 7 runas, dioses y brújulas (+aviso del anillo de fuego), esbirros, tier celestial
+- [x] Todo trilingüe (advancements + 7 páginas × 3 idiomas)
 
 ## Fase 5 — Dimensión Celestial + boss final (muy grande, al último)
 
