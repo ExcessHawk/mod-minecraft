@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["SS", "SS"],
+  "key": {"S": {"item": "mythicalswords:celestial_stone"}},
+  "result": {"item": "mythicalswords:celestial_bricks", "count": 4}
+}

@@ -138,6 +138,18 @@ public class ModEntities {
                                         .dimensions(EntityDimensions.fixed(0.6f, 1.95f))
                                         .build());
 
+        // ===== Final boss: Celestial dimension (v0.6 F5) =====
+        public static final EntityType<com.mythicalswords.entity.CelestialGuardianEntity> CELESTIAL_GUARDIAN =
+                        Registry.register(Registries.ENTITY_TYPE,
+                                        new Identifier(MythicalSwords.MOD_ID, "celestial_guardian"),
+                                        FabricEntityTypeBuilder.<com.mythicalswords.entity.CelestialGuardianEntity>create(
+                                                        SpawnGroup.MONSTER,
+                                                        com.mythicalswords.entity.CelestialGuardianEntity::new)
+                                                        .dimensions(EntityDimensions.fixed(1.8f, 4.2f))
+                                                        .fireImmune()
+                                                        .trackRangeBlocks(96)
+                                                        .build());
+
         // ===== Mythology minions (v0.6 F3) =====
         public static final EntityType<DraugrEntity> DRAUGR = registerMinion("draugr", DraugrEntity::new);
         public static final EntityType<OniMenorEntity> ONI_MENOR = registerMinion("oni_menor", OniMenorEntity::new);
@@ -180,6 +192,10 @@ public class ModEntities {
                 FabricDefaultAttributeRegistry.register(ANUBIS, AnubisEntity.createAnubisAttributes());
                 FabricDefaultAttributeRegistry.register(RA, RaEntity.createRaAttributes());
                 FabricDefaultAttributeRegistry.register(SUN_WUKONG, SunWukongEntity.createSunWukongAttributes());
+
+                // Final boss
+                FabricDefaultAttributeRegistry.register(CELESTIAL_GUARDIAN,
+                                com.mythicalswords.entity.CelestialGuardianEntity.createCelestialGuardianAttributes());
 
                 // Mythology minions
                 FabricDefaultAttributeRegistry.register(DRAUGR, DraugrEntity.createDraugrAttributes());

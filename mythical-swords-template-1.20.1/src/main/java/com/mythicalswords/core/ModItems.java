@@ -108,6 +108,10 @@ public class ModItems {
         public static final Item CELESTIAL_INGOT = registerItem("celestial_ingot",
                         new Item(new FabricItemSettings()));
 
+        /** Unique drop from the Celestial Guardian — the key to the dragon (F6). */
+        public static final Item CELESTIAL_HEART = registerItem("celestial_heart",
+                        new Item(new FabricItemSettings().maxCount(1).rarity(net.minecraft.util.Rarity.EPIC)));
+
         public static final Item CELESTIAL_HELMET = registerItem("celestial_helmet",
                         new net.minecraft.item.ArmorItem(com.mythicalswords.armor.ModArmorMaterials.CELESTIAL, net.minecraft.item.ArmorItem.Type.HELMET, new FabricItemSettings()));
         public static final Item CELESTIAL_CHESTPLATE = registerItem("celestial_chestplate",
@@ -452,6 +456,9 @@ public class ModItems {
         public static final Item RA_SPAWN_EGG = registerItem("ra_spawn_egg",
                         new SpawnEggItem(ModEntities.RA, 0xFFD700, 0xFF4500, new FabricItemSettings()));
 
+        public static final Item CELESTIAL_GUARDIAN_SPAWN_EGG = registerItem("celestial_guardian_spawn_egg",
+                        new SpawnEggItem(ModEntities.CELESTIAL_GUARDIAN, 0xE8D48A, 0x9BE8FF, new FabricItemSettings()));
+
         // Minion Spawn Eggs (v0.6 F3)
         public static final Item DRAUGR_SPAWN_EGG = registerItem("draugr_spawn_egg",
                         new SpawnEggItem(ModEntities.DRAUGR, 0x8FA3AD, 0x28323A, new FabricItemSettings()));
@@ -531,6 +538,9 @@ public class ModItems {
                         // Special Blocks
                         content.add(ModBlocks.MYTHICAL_FORGE);
                         content.add(ModBlocks.BOSS_ALTAR);
+                        content.add(ModBlocks.CELESTIAL_STONE);
+                        content.add(ModBlocks.CELESTIAL_BRICKS);
+                        content.add(ModBlocks.CELESTIAL_PORTAL_FRAME);
                         content.add(BLACKSMITH_HAMMER);
                         content.add(GUIDE_BOOK);
 
@@ -611,6 +621,7 @@ public class ModItems {
                         content.add(VOIDSTEEL_HELMET); content.add(VOIDSTEEL_CHESTPLATE); content.add(VOIDSTEEL_LEGGINGS); content.add(VOIDSTEEL_BOOTS);
                         content.add(FROSTSTEEL_HELMET); content.add(FROSTSTEEL_CHESTPLATE); content.add(FROSTSTEEL_LEGGINGS); content.add(FROSTSTEEL_BOOTS);
                         content.add(CELESTIAL_INGOT);
+                        content.add(CELESTIAL_HEART);
                         content.add(CELESTIAL_HELMET); content.add(CELESTIAL_CHESTPLATE); content.add(CELESTIAL_LEGGINGS); content.add(CELESTIAL_BOOTS);
 
                         // Relics & Consumables
@@ -642,6 +653,7 @@ public class ModItems {
                         // content.add(RIDEABLE_DRAGON_SPAWN_EGG);
                         content.add(RA_SPAWN_EGG);
                         content.add(SUN_WUKONG_SPAWN_EGG);
+                        content.add(CELESTIAL_GUARDIAN_SPAWN_EGG);
                         content.add(DRAUGR_SPAWN_EGG);
                         content.add(ONI_MENOR_SPAWN_EGG);
                         content.add(MOMIA_SIRVIENTE_SPAWN_EGG);

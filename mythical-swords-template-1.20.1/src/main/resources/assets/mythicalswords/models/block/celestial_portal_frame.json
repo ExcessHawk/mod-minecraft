@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mythicalswords:block/celestial_portal_frame"
+  }
+}

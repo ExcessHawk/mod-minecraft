@@ -1,0 +1,22 @@
+{
+  "parent": "mythicalswords:celestial_forger",
+  "display": {
+    "icon": { "item": "mythicalswords:celestial_heart" },
+    "title": { "translate": "advancements.mythicalswords.kill_celestial_guardian.title" },
+    "description": { "translate": "advancements.mythicalswords.kill_celestial_guardian.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "killed": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "type": "mythicalswords:celestial_guardian" } }
+        ]
+      }
+    }
+  },
+  "rewards": { "experience": 1000 }
+}

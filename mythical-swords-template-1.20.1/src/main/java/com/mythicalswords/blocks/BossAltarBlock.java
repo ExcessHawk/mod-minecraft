@@ -53,6 +53,8 @@ public class BossAltarBlock extends BlockWithEntity {
         BOSS_REGISTRY.put("anubis",       new BossEntry(ModEntities.ANUBIS,       "Anubis",       Formatting.DARK_PURPLE));
         BOSS_REGISTRY.put("ra",           new BossEntry(ModEntities.RA,           "Ra",           Formatting.YELLOW));
         BOSS_REGISTRY.put("sun_wukong",   new BossEntry(ModEntities.SUN_WUKONG,   "Sun Wukong",   Formatting.GOLD));
+        BOSS_REGISTRY.put("celestial_guardian",
+                new BossEntry(ModEntities.CELESTIAL_GUARDIAN, "Guardián Celestial", Formatting.AQUA));
     }
 
     public BossAltarBlock(Settings settings) {

@@ -1,0 +1,85 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.celestial_guardian",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 3, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 20, 0],
+					"cubes": [
+						{"origin": [-7, 20, -4], "size": [14, 18, 8], "uv": [0, 0]},
+						{"origin": [-5, 14, -3], "size": [10, 6, 6], "uv": [0, 40]}
+					]
+				},
+				{
+					"name": "core",
+					"parent": "body",
+					"pivot": [0, 29, -4],
+					"cubes": [{"origin": [-3, 26, -5.5], "size": [6, 6, 2], "uv": [44, 40]}]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 38, 0],
+					"cubes": [{"origin": [-5, 38, -5], "size": [10, 10, 10], "uv": [0, 56]}]
+				},
+				{
+					"name": "crown",
+					"parent": "head",
+					"pivot": [0, 48, 0],
+					"cubes": [
+						{"origin": [-5.5, 48, -5.5], "size": [11, 2, 11], "uv": [0, 80]},
+						{"origin": [-1, 50, -5.5], "size": [2, 5, 1], "uv": [46, 80]},
+						{"origin": [-5, 50, -1], "size": [1, 4, 2], "uv": [46, 80]},
+						{"origin": [4, 50, -1], "size": [1, 4, 2], "uv": [46, 80]},
+						{"origin": [-1, 50, 4.5], "size": [2, 4, 1], "uv": [46, 80]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "body",
+					"pivot": [-7, 36, 0],
+					"cubes": [{"origin": [-11, 18, -3], "size": [4, 18, 6], "uv": [56, 0]}]
+				},
+				{
+					"name": "left_arm",
+					"parent": "body",
+					"pivot": [7, 36, 0],
+					"cubes": [{"origin": [7, 18, -3], "size": [4, 18, 6], "uv": [80, 0]}]
+				},
+				{
+					"name": "wing_right",
+					"parent": "body",
+					"pivot": [-6, 34, 4],
+					"cubes": [
+						{"origin": [-22, 24, 4], "size": [16, 14, 1], "uv": [0, 96]},
+						{"origin": [-18, 20, 4.2], "size": [11, 8, 1], "uv": [0, 112]}
+					]
+				},
+				{
+					"name": "wing_left",
+					"parent": "body",
+					"pivot": [6, 34, 4],
+					"cubes": [
+						{"origin": [6, 24, 4], "size": [16, 14, 1], "uv": [34, 96]},
+						{"origin": [7, 20, 4.2], "size": [11, 8, 1], "uv": [34, 112]}
+					]
+				},
+				{
+					"name": "robe",
+					"parent": "body",
+					"pivot": [0, 20, 0],
+					"cubes": [{"origin": [-6, 4, -3], "size": [12, 16, 6], "uv": [64, 40]}]
+				}
+			]
+		}
+	]
+}

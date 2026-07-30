@@ -93,6 +93,7 @@ public class MythicalSwordsClient implements ClientModInitializer {
                 EntityRendererRegistry.register(ModEntities.QUETZALCOATL, QuetzalcoatlRenderer::new);
 
                 EntityRendererRegistry.register(ModEntities.LEGENDARY_BLACKSMITH, LegendaryBlacksmithRenderer::new);
+                EntityRendererRegistry.register(ModEntities.CELESTIAL_GUARDIAN, com.mythicalswords.client.renderer.CelestialGuardianRenderer::new);
                 EntityRendererRegistry.register(ModEntities.DRAUGR, com.mythicalswords.client.renderer.MinionRenderer::new);
                 EntityRendererRegistry.register(ModEntities.ONI_MENOR, com.mythicalswords.client.renderer.MinionRenderer::new);
                 EntityRendererRegistry.register(ModEntities.MOMIA_SIRVIENTE, com.mythicalswords.client.renderer.MinionRenderer::new);

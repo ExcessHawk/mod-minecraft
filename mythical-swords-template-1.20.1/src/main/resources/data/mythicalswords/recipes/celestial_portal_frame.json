@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["BBB", "BDB", "BBB"],
+  "key": {
+    "B": {"item": "mythicalswords:celestial_bricks"},
+    "D": {"item": "mythicalswords:shard_of_divinity"}
+  },
+  "result": {"item": "mythicalswords:celestial_portal_frame", "count": 3}
+}

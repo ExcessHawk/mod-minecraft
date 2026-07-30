@@ -1,0 +1,18 @@
+{
+  "parent": "mythicalswords:celestial_forger",
+  "display": {
+    "icon": { "item": "mythicalswords:celestial_portal_frame" },
+    "title": { "translate": "advancements.mythicalswords.enter_celestial.title" },
+    "description": { "translate": "advancements.mythicalswords.enter_celestial.description" },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "entered": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": { "to": "mythicalswords:celestial" }
+    }
+  },
+  "rewards": { "experience": 300 }
+}

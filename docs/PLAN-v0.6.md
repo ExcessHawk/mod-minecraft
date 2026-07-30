@@ -75,12 +75,20 @@ Base ya existe: `MythicalBossEntity` con 3 fases (100%→60%→30%).
 
 ## Fase 5 — Dimensión Celestial + boss final (muy grande, al último)
 
-- [ ] Bloque `celestial_stone` (+ pulido) para el marco del portal
-- [ ] Portal: marco de celestial_stone activado con Lingote Celestial (ya existe, cierra el loop de Fase 3 v0.5)
-- [ ] Dimensión datapack: islas flotantes (noise end-like), cielo custom, sin lluvia
-- [ ] Estructura: templo celestial con boss altar final
-- [ ] Boss final: **Guardián Celestial** — GeckoLib grande, 3 fases, rota resistencias por afinidad elemental (obliga a cambiar de arma), invoca esbirros de TODAS las mitologías
-- [ ] Drop: **Corazón Celestial** (único por kill)
+✅ COMPLETADA 2026-07-12 (compila + build OK)
+
+- [x] Bloques: `celestial_stone`, `celestial_bricks`, `celestial_portal_frame`, `celestial_portal` — texturas por `scripts/gen-celestial-blocks.ps1`, recetas en cadena (lingote celestial → piedra → ladrillos → marco con shard_of_divinity)
+- [x] Portal: plataforma **3x3 de marcos** + click derecho con Lingote Celestial en el centro → abre columna de portal. `CelestialPortalFrameBlock` valida el 3x3 y avisa qué falta; `CelestialPortalBlock` teleporta al colisionar (Celestial ⇄ Overworld) y **construye plataforma de aterrizaje** si no hay suelo (crítico: islas flotantes = riesgo de caer al void)
+- [x] Dimensión datapack: `dimension/celestial.json` + `dimension_type` (fixed_time noche, effects end, sin lluvia, altura 0-128) + `worldgen/noise_settings/celestial.json` con `minecraft:end_islands` (formato extraído del end.json vanilla del jar 1.20.1) → islas flotantes de celestial_stone
+- [x] Boss final **Guardián Celestial**: 2000❤, flotante 1.8x4.2, GeckoLib nuevo (geo con alas/corona/núcleo + 4 anims: idle, melee, special, ward_shift), textura 128x128 por `scripts/gen-guardian.ps1`
+  - **Mecánica Guardia Elemental**: una afinidad está protegida a la vez; armas de esa afinidad hacen 15% de daño, la afinidad opuesta hace 150%. Rota cada 20s Y en cada cambio de fase, con partículas del color del elemento + aviso en pantalla → obliga a llevar arsenal
+  - Ataque pesado temático: onda del elemento activo (fuego quema, hielo ralentiza, rayo debilita, oscuridad ciega, naturaleza envenena, divino marca)
+  - Juicio Celestial (columna de luz), invoca **1 esbirro de CADA mitología** en fases 2 y 3, y sigue llamando refuerzos en enrage
+- [x] Drop: **Corazón Celestial** (único, rarity EPIC) + 4-8 lingotes celestiales + 2-4 shards + XP. Registrado en el tag `bosses` y en `BOSS_REGISTRY` del altar (invocable con Nether Star en el altar celestial)
+- [x] Advancements: "Más Allá del Cielo" (entrar a la dimensión) y "Custodio de los Cielos" (matarlo, challenge, 1000 XP)
+- [x] Spawn egg del guardián + todo trilingüe
+- NOTA: se reusaron las claves de afinidad MAYÚSCULAS que ya existían en lang (había duplicados fire/FIRE) — el código usa `ward.name()` directo
+- [ ] Estructura templo celestial (pospuesta: la dimensión ya es explorable y el boss se invoca por altar; un templo jigsaw encaja mejor en v0.8)
 
 ## Fase 6 — Dragón montable por fin obtenible (chica)
 

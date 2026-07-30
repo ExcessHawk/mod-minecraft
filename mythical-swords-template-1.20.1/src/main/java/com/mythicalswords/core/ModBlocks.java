@@ -84,6 +84,35 @@ public class ModBlocks {
                     .nonOpaque() // 3D model is not a full cube; avoids neighbor face culling holes
                     .luminance(state -> 7)));
 
+    // ===== Celestial dimension blocks (v0.6 F5) =====
+    public static final Block CELESTIAL_STONE = registerBlock("celestial_stone",
+            new Block(FabricBlockSettings.create()
+                    .strength(3.0f, 9.0f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CELESTIAL_BRICKS = registerBlock("celestial_bricks",
+            new Block(FabricBlockSettings.create()
+                    .strength(3.5f, 9.0f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CELESTIAL_PORTAL_FRAME = registerBlock("celestial_portal_frame",
+            new com.mythicalswords.blocks.CelestialPortalFrameBlock(FabricBlockSettings.create()
+                    .strength(6.0f, 1200.0f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.STONE)
+                    .luminance(state -> 4)));
+
+    public static final Block CELESTIAL_PORTAL = registerBlock("celestial_portal",
+            new com.mythicalswords.blocks.CelestialPortalBlock(FabricBlockSettings.create()
+                    .strength(-1.0f, 3600000.0f) // unbreakable like vanilla portals
+                    .nonOpaque()
+                    .noCollision()
+                    .dropsNothing()
+                    .sounds(BlockSoundGroup.GLASS)
+                    .luminance(state -> 11)));
+
     // Boss Altar - NBT-driven boss summoning (each structure sets its own boss ID)
     public static final Block BOSS_ALTAR = registerBlock("boss_altar",
             new BossAltarBlock(FabricBlockSettings.create()

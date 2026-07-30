@@ -1,0 +1,11 @@
+{
+  "type": "mythicalswords:celestial",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "mythicalswords:celestial",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:the_void"
+    }
+  }
+}

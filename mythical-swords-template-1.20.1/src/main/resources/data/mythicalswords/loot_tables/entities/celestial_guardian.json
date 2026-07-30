@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {"type": "minecraft:item", "name": "mythicalswords:celestial_heart"}
+      ]
+    },
+    {
+      "rolls": {"min": 4, "max": 8},
+      "entries": [
+        {"type": "minecraft:item", "name": "mythicalswords:celestial_ingot"}
+      ]
+    },
+    {
+      "rolls": {"min": 2, "max": 4},
+      "entries": [
+        {"type": "minecraft:item", "name": "mythicalswords:shard_of_divinity"}
+      ]
+    },
+    {
+      "rolls": {"min": 20, "max": 32},
+      "entries": [
+        {"type": "minecraft:item", "name": "minecraft:experience_bottle"}
+      ]
+    }
+  ]
+}

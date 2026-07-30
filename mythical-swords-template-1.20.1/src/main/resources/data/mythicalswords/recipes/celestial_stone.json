@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["SCS", "CSC", "SCS"],
+  "key": {
+    "S": {"item": "minecraft:stone"},
+    "C": {"item": "mythicalswords:celestial_ingot"}
+  },
+  "result": {"item": "mythicalswords:celestial_stone", "count": 8}
+}
