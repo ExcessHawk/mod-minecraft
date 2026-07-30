@@ -130,7 +130,17 @@ public class BossAltarBlock extends BlockWithEntity {
 
     private String getBossId(World world, BlockPos pos) {
         if (world.getBlockEntity(pos) instanceof BossAltarBlockEntity altar) {
-            return altar.getBossId();
+            String id = altar.getBossId();
+            if (!id.isEmpty()) {
+                return id;
+            }
+        }
+        // An unassigned altar standing in the Celestial dimension calls its
+        // guardian — the only survival path to the final boss, since no
+        // structure generates up there.
+        if (world.getRegistryKey().equals(
+                com.mythicalswords.blocks.CelestialPortalBlock.CELESTIAL_WORLD)) {
+            return "celestial_guardian";
         }
         return "";
     }

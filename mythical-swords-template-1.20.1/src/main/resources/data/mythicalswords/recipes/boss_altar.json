@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OSO",
+    "SDS",
+    "OSO"
+  ],
+  "key": {
+    "O": {"item": "minecraft:obsidian"},
+    "S": {"item": "minecraft:stone_bricks"},
+    "D": {"item": "mythicalswords:shard_of_divinity"}
+  },
+  "result": {
+    "item": "mythicalswords:boss_altar",
+    "count": 1
+  }
+}
